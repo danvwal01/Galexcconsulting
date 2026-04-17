@@ -3,1308 +3,1648 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GalexC Corporate Conservation — Water Cost Reduction Specialists</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>Filter & Forget — Better Air. Less Maintenance. Lower HVAC Costs. Phoenix, AZ</title>
+<meta name="description" content="Phoenix commercial and multifamily property owners cut HVAC costs 15–40% with Blade Air electrostatic filters. Change filters less often. Protect your equipment. Get your free property assessment.">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💨</text></svg>">
+
+<!-- Open Graph / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://filterandforget.com/">
+<meta property="og:title" content="Filter & Forget — Better Air. Less Maintenance. Lower HVAC Costs.">
+<meta property="og:description" content="Phoenix property owners reduce HVAC energy costs 15–40% and cut filter changes in half with Blade Air electrostatic technology. Get your free property assessment.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&q=80">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Filter & Forget — Better Air. Less Maintenance. Lower HVAC Costs.">
+<meta name="twitter:description" content="Phoenix property owners reduce HVAC energy costs 15–40% and cut filter changes in half with Blade Air electrostatic technology.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&q=80">
+
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L0VGP30RW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8L0VGP30RW');
+</script>
+<!-- SEO -->
+<link rel="canonical" href="https://filterandforget.com/">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="commercial HVAC filter Phoenix, electrostatic air filter Phoenix AZ, multifamily HVAC filter savings, Blade Air Pro Filter Arizona, reduce HVAC costs Phoenix, better air filter commercial property">
+<meta name="geo.region" content="US-AZ">
+<meta name="geo.placename" content="Phoenix, Arizona">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Filter & Forget",
+  "description": "Phoenix commercial HVAC filtration upgrade service. Blade Air electrostatic filters reduce HVAC energy 15–40%, cut filter changes in half, and improve indoor air quality.",
+  "url": "https://filterandforget.com",
+  "telephone": "+14258309902",
+  "email": "danv@galexcconservation.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Phoenix",
+    "addressRegion": "AZ",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Arizona" },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "GalexC Conservation Services",
+    "url": "https://galexcconservation.com"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
   :root {
-    --teal: #0B7B73;
-    --teal-light: #0FA89D;
-    --teal-dim: #0B7B7322;
-    --dark: #0D1117;
-    --dark2: #141B24;
-    --dark3: #1C2733;
-    --slate: #2D3E4F;
-    --mid: #4A6070;
-    --muted: #8CA0AD;
-    --light: #B8CDD9;
-    --offwhite: #EFF4F7;
+    --bg: #080C10;
+    --bg2: #0C1117;
+    --bg3: #111820;
+    --surface: rgba(255,255,255,0.04);
+    --surface-hover: rgba(255,255,255,0.07);
+    --border: rgba(255,255,255,0.08);
+    --border-light: rgba(255,255,255,0.14);
+    --sky: #6EC6E6;
+    --sky-dim: rgba(110,198,230,0.12);
+    --mint: #4DD9AC;
     --white: #FFFFFF;
-    --orange: #E8642A;
-    --orange-dim: #E8642A22;
-    --green: #2ECC71;
+    --text: rgba(255,255,255,0.58);
+    --text-muted: rgba(255,255,255,0.38);
+    --text-bright: rgba(255,255,255,0.85);
+    --green: #34D399;
+    --amber: #FBBF24;
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
+  * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'DM Sans', sans-serif;
-    background: var(--dark);
-    color: var(--offwhite);
+    background: var(--bg);
+    color: var(--text);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* grain overlay */
+  body::after {
+    content:''; position:fixed; inset:0; z-index:9999;
+    pointer-events:none; opacity:0.022;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size:128px;
   }
 
   /* ── NAV ── */
   nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 5vw;
-    height: 68px;
-    background: rgba(13,17,23,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(11,123,115,0.25);
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 5vw; height:68px;
+    background:rgba(8,12,16,0.85);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--border);
+    transition:background 0.3s;
   }
-
-  .nav-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 28px;
-    letter-spacing: 2px;
-    color: var(--white);
-    text-decoration: none;
-  }
-  .nav-logo span { color: var(--teal-light); }
-
-  .nav-links {
-    display: flex; gap: 36px; list-style: none;
-  }
-  .nav-links a {
-    font-size: 13px; font-weight: 500; letter-spacing: 0.8px;
-    text-transform: uppercase; color: var(--light);
-    text-decoration: none; transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--teal-light); }
-
-  .nav-cta {
-    background: var(--teal); color: var(--white) !important;
-    padding: 9px 22px; border-radius: 4px;
-    font-weight: 600 !important; transition: background 0.2s !important;
-  }
-  .nav-cta:hover { background: var(--teal-light) !important; color: var(--white) !important; }
+  .nav-brand { font-size:17px; font-weight:700; color:white; text-decoration:none; letter-spacing:0.3px; }
+  .nav-brand span { color:var(--sky); }
+  .nav-links { display:flex; gap:32px; list-style:none; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-muted); text-decoration:none; transition:color 0.2s; letter-spacing:0.3px; }
+  .nav-links a:hover { color:white; }
+  .nav-cta { background:white !important; color:var(--bg) !important; padding:8px 20px !important; border-radius:4px !important; font-weight:600 !important; transition:all 0.2s !important; }
+  .nav-cta:hover { opacity:0.9 !important; transform:translateY(-1px) !important; }
+  .mobile-menu { display:none; background:none; border:none; font-size:24px; color:white; cursor:pointer; }
 
   /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: grid; grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 68px 5vw 0;
-    position: relative;
-    overflow: hidden;
+  .hero { min-height:100vh; position:relative; overflow:hidden; display:flex; align-items:center; }
+  .hero-bg {
+    position:absolute; inset:0;
+    background:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
   }
-
-  .hero::before {
-    content: '';
-    position: absolute; top: 0; right: 0;
-    width: 55%; height: 100%;
-    background: linear-gradient(135deg, var(--dark2) 0%, var(--dark3) 100%);
-    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+  .hero-bg::after {
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(135deg, rgba(8,12,16,0.92) 0%, rgba(8,12,16,0.60) 50%, rgba(8,12,16,0.82) 100%);
   }
-
-  .hero-grid-overlay {
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    background-image:
-      linear-gradient(rgba(11,123,115,0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(11,123,115,0.07) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
+  .hero-content { position:relative; z-index:5; padding:140px 5vw 120px; max-width:800px; }
+  .hero-eyebrow {
+    font-size:12px; font-weight:600; letter-spacing:3px;
+    text-transform:uppercase; color:var(--sky);
+    margin-bottom:24px; animation:fadeUp 0.8s 0.1s ease both;
   }
-
-  .hero-left {
-    position: relative; z-index: 2;
-    padding-right: 60px;
-    animation: fadeUp 0.8s ease both;
+  .hero h1 {
+    font-family:'Fraunces', serif;
+    font-size:clamp(38px,5.5vw,70px);
+    font-weight:700; line-height:1.08;
+    color:white; margin-bottom:24px;
+    animation:fadeUp 0.8s 0.2s ease both;
   }
-
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--teal-dim); border: 1px solid var(--teal);
-    padding: 6px 14px; border-radius: 20px;
-    font-size: 11px; font-weight: 600; letter-spacing: 1.2px;
-    text-transform: uppercase; color: var(--teal-light);
-    margin-bottom: 28px;
-  }
-  .hero-badge::before {
-    content: ''; width: 6px; height: 6px; border-radius: 50%;
-    background: var(--teal-light);
-    animation: pulse 2s infinite;
-  }
-
-  h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(52px, 6vw, 88px);
-    line-height: 0.95;
-    letter-spacing: 1px;
-    color: var(--white);
-    margin-bottom: 24px;
-  }
-  h1 .accent { color: var(--teal-light); display: block; }
-
+  .hero h1 em { font-style:italic; color:var(--sky); }
   .hero-sub {
-    font-size: 18px; font-weight: 300; line-height: 1.65;
-    color: var(--light); max-width: 480px;
-    margin-bottom: 40px;
+    font-size:18px; font-weight:400; line-height:1.7;
+    color:var(--text); max-width:560px;
+    margin-bottom:40px; animation:fadeUp 0.8s 0.35s ease both;
   }
+  .hero-ctas { display:flex; gap:14px; flex-wrap:wrap; animation:fadeUp 0.8s 0.5s ease both; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:15px 30px; border-radius:4px; font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; text-decoration:none; transition:all 0.25s; cursor:pointer; border:2px solid transparent; }
+  .btn-light { background:white; color:var(--bg); border-color:white; }
+  .btn-light:hover { transform:translateY(-2px); box-shadow:0 12px 32px rgba(0,0,0,0.3); }
+  .btn-ghost { background:transparent; color:white; border-color:rgba(255,255,255,0.2); }
+  .btn-ghost:hover { border-color:rgba(255,255,255,0.5); }
+  .btn-sky { background:var(--sky); color:var(--bg); border-color:var(--sky); }
+  .btn-sky:hover { background:#5AB6D6; border-color:#5AB6D6; transform:translateY(-2px); box-shadow:0 8px 24px rgba(110,198,230,0.25); }
 
-  .hero-ctas {
-    display: flex; gap: 16px; flex-wrap: wrap;
+  .hero-stats {
+    position:absolute; bottom:0; left:0; right:0; z-index:5;
+    display:flex; border-top:1px solid var(--border);
+    background:rgba(8,12,16,0.6); backdrop-filter:blur(12px);
+    animation:fadeUp 0.8s 0.6s ease both;
   }
-
-  .btn-primary {
-    display: inline-flex; align-items: center; gap: 10px;
-    background: var(--teal); color: var(--white);
-    padding: 15px 30px; border-radius: 4px;
-    font-size: 15px; font-weight: 600; text-decoration: none;
-    transition: all 0.25s; border: 2px solid var(--teal);
-  }
-  .btn-primary:hover { background: var(--teal-light); border-color: var(--teal-light); transform: translateY(-2px); }
-
-  .btn-secondary {
-    display: inline-flex; align-items: center; gap: 10px;
-    background: transparent; color: var(--white);
-    padding: 15px 30px; border-radius: 4px;
-    font-size: 15px; font-weight: 500; text-decoration: none;
-    border: 2px solid var(--slate); transition: all 0.25s;
-  }
-  .btn-secondary:hover { border-color: var(--teal-light); color: var(--teal-light); }
-
-  .hero-right {
-    position: relative; z-index: 2;
-    animation: fadeUp 0.8s 0.2s ease both;
-  }
-
-  .hero-stat-grid {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    padding-left: 40px;
-  }
-
-  .stat-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(11,123,115,0.3);
-    border-radius: 8px;
-    padding: 28px 24px;
-    transition: all 0.3s;
-  }
-  .stat-card:hover {
-    background: rgba(11,123,115,0.08);
-    border-color: var(--teal);
-    transform: translateY(-3px);
-  }
-  .stat-card.featured {
-    background: var(--teal);
-    border-color: var(--teal-light);
-    grid-column: span 2;
-  }
-
-  .stat-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 52px; line-height: 1;
-    color: var(--teal-light);
-    margin-bottom: 6px;
-  }
-  .stat-card.featured .stat-num { color: var(--white); font-size: 64px; }
-  .stat-label {
-    font-size: 13px; font-weight: 500; letter-spacing: 0.5px;
-    color: var(--muted);
-  }
-  .stat-card.featured .stat-label { color: rgba(255,255,255,0.8); font-size: 15px; }
+  .hero-stat { flex:1; padding:28px 5vw; border-right:1px solid var(--border); }
+  .hero-stat:last-child { border-right:none; }
+  .hero-stat .num { font-family:'Fraunces',serif; font-size:30px; font-weight:700; color:white; }
+  .hero-stat .label { font-size:12px; font-weight:500; color:var(--text-muted); margin-top:4px; }
 
   /* ── TICKER ── */
-  .ticker {
-    background: var(--teal);
-    padding: 14px 0;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .ticker-inner {
-    display: inline-flex; gap: 0;
-    animation: ticker 30s linear infinite;
-  }
-  .ticker-item {
-    display: inline-flex; align-items: center; gap: 16px;
-    font-family: 'DM Mono', monospace;
-    font-size: 12px; font-weight: 500;
-    letter-spacing: 1px; text-transform: uppercase;
-    color: rgba(255,255,255,0.9);
-    padding: 0 40px;
-  }
-  .ticker-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.5); }
+  .ticker-wrap { background:var(--bg2); padding:20px 0; position:relative; overflow:hidden; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+  .ticker-fade-l,.ticker-fade-r { position:absolute; top:0; bottom:0; width:120px; z-index:5; pointer-events:none; }
+  .ticker-fade-l { left:0; background:linear-gradient(90deg,var(--bg2),transparent); }
+  .ticker-fade-r { right:0; background:linear-gradient(90deg,transparent,var(--bg2)); }
+  .ticker-track-wrap { overflow:hidden; }
+  .ticker-track { display:inline-flex; gap:14px; animation:ticker 55s linear infinite; }
+  .ticker-card { display:inline-flex; align-items:center; gap:10px; padding:10px 20px; white-space:nowrap; background:var(--surface); border:1px solid var(--border); border-radius:8px; font-size:13px; font-weight:500; color:var(--text-bright); flex-shrink:0; }
+  .ticker-card strong { color:var(--sky); }
+  .ticker-badge { display:inline-block; padding:2px 8px; border-radius:3px; font-size:9px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; background:var(--sky-dim); color:var(--sky); }
 
-  /* ── SECTION SCAFFOLDING ── */
-  section { padding: 100px 5vw; }
-  .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--teal-light); margin-bottom: 14px;
-  }
-  h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(40px, 4.5vw, 64px);
-    line-height: 1.0;
-    color: var(--white);
-    margin-bottom: 20px;
-  }
-  .section-intro {
-    font-size: 17px; font-weight: 300; line-height: 1.7;
-    color: var(--light); max-width: 580px;
-  }
+  /* ── SECTION COMMON ── */
+  section { padding:100px 5vw; }
+  .section-inner { max-width:1200px; margin:0 auto; }
+  .section-eyebrow { font-size:12px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--sky); margin-bottom:16px; }
+  .section-title { font-family:'Fraunces',serif; font-size:clamp(28px,3.5vw,46px); font-weight:700; color:white; line-height:1.15; margin-bottom:16px; }
+  .section-desc { font-size:17px; font-weight:400; line-height:1.7; color:var(--text); max-width:580px; }
+
+  /* ── QUALIFIER ── */
+  .qualifier { background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:60px 5vw; }
+  .qualifier-inner { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .qual-card { display:flex; align-items:flex-start; gap:16px; padding:28px 24px; background:var(--surface); border:1px solid var(--border); border-radius:10px; transition:all 0.3s; }
+  .qual-card:hover { border-color:var(--border-light); background:var(--surface-hover); }
+  .qual-icon { font-size:28px; flex-shrink:0; margin-top:2px; }
+  .qual-card h3 { font-size:15px; font-weight:700; color:white; margin-bottom:6px; }
+  .qual-card p { font-size:13px; color:var(--text); line-height:1.6; }
+
+  /* ── COMPARISON TABLE ── */
+  .compare { background:var(--bg); }
+  .compare-table { margin-top:48px; border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+  .compare-header { display:grid; grid-template-columns:2fr 1fr 1fr; background:var(--bg3); border-bottom:1px solid var(--border); }
+  .compare-header-cell { padding:18px 24px; font-size:13px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; }
+  .compare-header-cell.highlight { color:var(--sky); background:rgba(110,198,230,0.06); border-left:1px solid rgba(110,198,230,0.15); }
+  .compare-row { display:grid; grid-template-columns:2fr 1fr 1fr; border-bottom:1px solid var(--border); }
+  .compare-row:last-child { border-bottom:none; }
+  .compare-row:nth-child(even) { background:rgba(255,255,255,0.02); }
+  .compare-cell { padding:16px 24px; font-size:14px; color:var(--text); display:flex; align-items:center; gap:8px; }
+  .compare-cell.label { font-weight:600; color:var(--text-bright); }
+  .compare-cell.bad { color:#EF4444; }
+  .compare-cell.good { color:var(--mint); background:rgba(77,217,172,0.04); border-left:1px solid rgba(77,217,172,0.1); }
+  .check { color:var(--mint); font-size:16px; }
+  .cross { color:#EF4444; font-size:16px; }
 
   /* ── HOW IT WORKS ── */
-  #how { background: var(--dark2); }
+  .how { background:var(--bg2); }
+  .how-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin-top:48px; }
+  .how-step { display:flex; gap:20px; padding:24px 0; border-bottom:1px solid var(--border); }
+  .how-step:last-child { border-bottom:none; }
+  .step-num { font-family:'DM Mono',monospace; font-size:12px; font-weight:500; color:var(--sky); min-width:24px; padding-top:2px; }
+  .step-content h3 { font-size:16px; font-weight:700; color:white; margin-bottom:4px; }
+  .step-content p { font-size:14px; color:var(--text); line-height:1.65; }
 
-  .how-grid {
-    display: grid; grid-template-columns: 1fr 1.1fr;
-    gap: 80px; align-items: center;
-    margin-top: 60px;
-  }
+  .how-visual { background:var(--bg3); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+  .how-vis-inner { padding:28px; }
+  .how-vis-header { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--text-muted); margin-bottom:20px; }
+  .stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .stat-box { padding:20px; background:var(--surface); border:1px solid var(--border); border-radius:8px; text-align:center; }
+  .stat-box .val { font-family:'Fraunces',serif; font-size:32px; font-weight:700; color:var(--sky); line-height:1; margin-bottom:6px; }
+  .stat-box .desc { font-size:12px; color:var(--text-muted); line-height:1.4; }
+  .how-note { margin-top:16px; padding:14px 18px; background:rgba(77,217,172,0.08); border:1px solid rgba(77,217,172,0.15); border-radius:6px; font-size:13px; color:var(--text-bright); line-height:1.6; }
+  .how-note strong { color:white; }
+  .how-certs { margin-top:16px; display:flex; gap:14px; flex-wrap:wrap; }
+  .how-certs span { font-family:'DM Mono',monospace; font-size:10px; color:var(--text-muted); letter-spacing:0.5px; }
 
-  .how-steps { display: flex; flex-direction: column; gap: 0; }
+  /* ── PROOF / TESTIMONIALS ── */
+  .proof { background:var(--bg); }
+  .proof-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:40px; }
+  .proof-card { background:var(--bg3); border:1px solid var(--border); border-radius:10px; padding:28px 24px; transition:all 0.3s; position:relative; overflow:hidden; }
+  .proof-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--sky),var(--mint)); transform:scaleX(0); transform-origin:left; transition:transform 0.3s; }
+  .proof-card:hover { border-color:var(--border-light); transform:translateY(-4px); box-shadow:0 12px 40px rgba(0,0,0,0.3); }
+  .proof-card:hover::before { transform:scaleX(1); }
+  .proof-card.featured { grid-row:span 2; display:flex; flex-direction:column; background:linear-gradient(180deg,rgba(110,198,230,0.08) 0%,var(--bg3) 100%); border-color:rgba(110,198,230,0.2); }
+  .proof-card.featured::before { display:none; }
+  .proof-badge { display:inline-block; padding:3px 10px; border-radius:3px; font-size:10px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; margin-bottom:14px; background:var(--sky-dim); color:var(--sky); }
+  .proof-name { font-size:18px; font-weight:700; color:white; margin-bottom:2px; }
+  .proof-type { font-size:12px; color:var(--text-muted); margin-bottom:20px; }
+  .proof-stats { display:flex; gap:20px; flex-wrap:wrap; margin-bottom:16px; }
+  .proof-stat .val { font-family:'Fraunces',serif; font-size:30px; font-weight:700; color:var(--sky); line-height:1; }
+  .proof-stat .desc { font-size:12px; color:var(--text-muted); margin-top:2px; }
+  .proof-quote { font-size:13px; font-weight:400; line-height:1.7; color:var(--text); font-style:italic; border-left:2px solid var(--sky); padding-left:14px; margin-top:auto; }
+  .proof-attr { font-size:12px; font-weight:600; font-style:normal; color:var(--text-bright); margin-top:6px; }
 
-  .how-step {
-    display: flex; gap: 24px;
-    padding: 28px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    transition: all 0.3s;
-    cursor: default;
-  }
-  .how-step:last-child { border-bottom: none; }
-  .how-step:hover .step-icon { background: var(--teal); border-color: var(--teal); }
-
-  .step-num {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; color: var(--teal-light);
-    letter-spacing: 1px; padding-top: 4px;
-    min-width: 28px;
-  }
-
-  .step-icon {
-    width: 44px; height: 44px; border-radius: 8px;
-    border: 1px solid var(--slate);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; flex-shrink: 0;
-    transition: all 0.3s;
-  }
-
-  .step-content h3 {
-    font-size: 17px; font-weight: 600; color: var(--white);
-    margin-bottom: 6px;
-  }
-  .step-content p {
-    font-size: 14px; font-weight: 300; line-height: 1.6;
-    color: var(--muted);
-  }
-
-  .how-visual {
-    background: var(--dark3);
-    border: 1px solid rgba(11,123,115,0.25);
-    border-radius: 12px;
-    padding: 40px;
-    position: relative;
-    overflow: hidden;
-  }
-  .how-visual::before {
-    content: '';
-    position: absolute; top: -40px; right: -40px;
-    width: 200px; height: 200px;
-    background: radial-gradient(circle, rgba(11,123,115,0.15) 0%, transparent 70%);
-  }
-
-  .visual-header {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 32px;
-  }
-
-  .meter-diagram {
-    display: flex; flex-direction: column; gap: 20px;
-  }
-
-  .meter-row {
-    display: flex; align-items: center; gap: 16px;
-  }
-  .meter-label {
-    font-size: 12px; font-weight: 500; color: var(--muted);
-    width: 80px; text-align: right; flex-shrink: 0;
-  }
-  .meter-bar-wrap {
-    flex: 1; background: rgba(255,255,255,0.06); border-radius: 4px;
-    height: 28px; overflow: hidden; position: relative;
-  }
-  .meter-bar {
-    height: 100%; border-radius: 4px;
-    display: flex; align-items: center; padding-left: 12px;
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; font-weight: 500; color: var(--white);
-    transition: width 1.5s ease;
-  }
-  .bar-before { background: linear-gradient(90deg, #C0392B, #E74C3C); width: 90%; }
-  .bar-after { background: linear-gradient(90deg, var(--teal), var(--teal-light)); width: 72%; }
-  .bar-savings { background: linear-gradient(90deg, var(--orange), #F39C12); width: 18%; }
-
-  .meter-value {
-    font-family: 'DM Mono', monospace;
-    font-size: 13px; color: var(--light); width: 50px;
-  }
-
-  .diagram-note {
-    background: rgba(11,123,115,0.12); border: 1px solid rgba(11,123,115,0.3);
-    border-radius: 6px; padding: 16px 20px;
-    margin-top: 12px;
-    font-size: 13px; font-weight: 300; line-height: 1.6;
-    color: var(--light);
-  }
-
-  /* ── MARKETS ── */
-  #markets { background: var(--dark); }
-
-  .markets-header {
-    display: flex; justify-content: space-between;
-    align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 20px;
-  }
-
-  .market-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .market-card {
-    background: var(--dark2);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 10px;
-    padding: 36px 28px;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-    cursor: default;
-  }
-  .market-card::before {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0;
-    height: 3px; background: var(--teal);
-    transform: scaleX(0); transform-origin: left;
-    transition: transform 0.3s;
-  }
-  .market-card:hover { border-color: rgba(11,123,115,0.4); transform: translateY(-4px); }
-  .market-card:hover::before { transform: scaleX(1); }
-
-  .market-icon { font-size: 36px; margin-bottom: 20px; }
-  .market-card h3 {
-    font-size: 18px; font-weight: 600; color: var(--white);
-    margin-bottom: 10px;
-  }
-  .market-card p {
-    font-size: 13px; font-weight: 300; line-height: 1.65;
-    color: var(--muted); margin-bottom: 20px;
-  }
-  .market-savings {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--teal-dim); border: 1px solid rgba(11,123,115,0.4);
-    padding: 5px 12px; border-radius: 20px;
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; font-weight: 500; color: var(--teal-light);
-  }
-
-  /* ── CASE STUDIES ── */
-  #results { background: var(--dark2); }
-
-  .results-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 20px;
-    margin-top: 48px;
-  }
-
-  .result-card {
-    background: var(--dark3);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 10px;
-    padding: 32px 28px;
-    transition: all 0.3s;
-  }
-  .result-card:hover { border-color: rgba(11,123,115,0.4); }
-  .result-card.large { grid-row: span 2; display: flex; flex-direction: column; }
-
-  .result-badge {
-    display: inline-block;
-    background: var(--teal-dim); border: 1px solid rgba(11,123,115,0.4);
-    padding: 4px 10px; border-radius: 3px;
-    font-size: 10px; font-weight: 600; letter-spacing: 1px;
-    text-transform: uppercase; color: var(--teal-light);
-    margin-bottom: 16px;
-  }
-
-  .result-org {
-    font-size: 18px; font-weight: 600; color: var(--white);
-    margin-bottom: 4px;
-  }
-  .result-type {
-    font-size: 12px; color: var(--muted); margin-bottom: 24px;
-  }
-
-  .result-stats {
-    display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 20px;
-  }
-  .result-stat {}
-  .result-stat .num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 38px; line-height: 1;
-    color: var(--teal-light);
-  }
-  .result-stat .unit {
-    font-size: 14px; color: var(--muted);
-    display: block; margin-top: 2px;
-  }
-
-  .result-quote {
-    font-size: 13px; font-weight: 300; line-height: 1.7;
-    color: var(--muted); font-style: italic;
-    border-left: 2px solid var(--teal);
-    padding-left: 16px; margin-top: auto;
-  }
-  .result-attribution {
-    font-size: 12px; font-weight: 500; color: var(--light);
-    margin-top: 8px; font-style: normal;
-  }
-
-  /* ── ABOUT ── */
-  #about { background: var(--dark); }
-
-  .about-grid {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 80px; align-items: center;
-    margin-top: 60px;
-  }
-
-  .about-left {}
-
-  .about-text {
-    font-size: 16px; font-weight: 300; line-height: 1.8;
-    color: var(--light); margin-bottom: 20px;
-  }
-
-  .about-creds {
-    display: flex; flex-direction: column; gap: 0;
-    margin-top: 36px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .cred-item {
-    display: flex; align-items: center; gap: 16px;
-    padding: 18px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .cred-icon { font-size: 20px; flex-shrink: 0; }
-  .cred-text {
-    font-size: 14px; font-weight: 400; color: var(--light);
-  }
-  .cred-text span { color: var(--white); font-weight: 600; }
-
-  .about-right {
-    background: var(--dark2);
-    border: 1px solid rgba(11,123,115,0.25);
-    border-radius: 12px;
-    padding: 40px;
-  }
-
-  .founder-header {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 28px;
-  }
-
-  .founder-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 42px; line-height: 1; color: var(--white);
-    margin-bottom: 4px;
-  }
-  .founder-title {
-    font-size: 14px; color: var(--teal-light); margin-bottom: 24px;
-  }
-
-  .founder-bio {
-    font-size: 14px; font-weight: 300; line-height: 1.75;
-    color: var(--light); margin-bottom: 28px;
-  }
-
-  .career-timeline {
-    display: flex; flex-direction: column; gap: 12px;
-  }
-  .career-item {
-    display: flex; gap: 14px; align-items: flex-start;
-  }
-  .career-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--teal); flex-shrink: 0; margin-top: 6px;
-  }
-  .career-detail {}
-  .career-co {
-    font-size: 13px; font-weight: 600; color: var(--white);
-  }
-  .career-role {
-    font-size: 12px; color: var(--muted);
-  }
-
-  /* ── CONTACT ── */
-  #contact {
-    background: linear-gradient(135deg, var(--dark2) 0%, var(--dark3) 100%);
-    position: relative; overflow: hidden;
-  }
-  #contact::before {
-    content: '';
-    position: absolute; top: -100px; right: -100px;
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(11,123,115,0.12) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  .contact-grid {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 80px; align-items: start;
-    position: relative; z-index: 1;
-  }
-
-  .contact-left {}
-
-  .contact-promise {
-    display: flex; flex-direction: column; gap: 16px;
-    margin: 36px 0;
-  }
-  .promise-item {
-    display: flex; align-items: flex-start; gap: 14px;
-  }
-  .promise-check {
-    width: 20px; height: 20px; border-radius: 50%;
-    background: var(--teal); display: flex; align-items: center;
-    justify-content: center; flex-shrink: 0; margin-top: 2px;
-    font-size: 11px;
-  }
-  .promise-text {
-    font-size: 15px; font-weight: 300; color: var(--light);
-  }
-  .promise-text strong { color: var(--white); font-weight: 600; }
-
-  .contact-form {
-    background: var(--dark);
-    border: 1px solid rgba(11,123,115,0.3);
-    border-radius: 12px;
-    padding: 40px;
-  }
-
-  .form-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 28px; color: var(--white);
-    margin-bottom: 28px;
-  }
-
-  .form-group {
-    margin-bottom: 18px;
-  }
-  .form-label {
-    display: block;
-    font-size: 12px; font-weight: 500; letter-spacing: 0.5px;
-    color: var(--muted); margin-bottom: 6px; text-transform: uppercase;
-  }
-  .form-input, .form-select, .form-textarea {
-    width: 100%; padding: 12px 16px;
-    background: var(--dark2); border: 1px solid var(--slate);
-    border-radius: 6px; color: var(--white);
-    font-family: 'DM Sans', sans-serif; font-size: 14px;
-    transition: border-color 0.2s;
-    outline: none;
-  }
-  .form-input:focus, .form-select:focus, .form-textarea:focus {
-    border-color: var(--teal);
-  }
-  .form-select option { background: var(--dark2); }
-  .form-textarea { resize: vertical; min-height: 90px; }
-
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-
-  .form-submit {
-    width: 100%; padding: 15px;
-    background: var(--teal); color: var(--white);
-    border: none; border-radius: 6px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px; font-weight: 600;
-    cursor: pointer; transition: background 0.2s;
-    margin-top: 8px;
-  }
-  .form-submit:hover { background: var(--teal-light); }
-
-  .form-note {
-    text-align: center; margin-top: 14px;
-    font-size: 12px; color: var(--muted);
-  }
+  /* ── LEAD FORM ── */
+  .getstarted { background:var(--bg2); }
+  .getstarted-inner { max-width:680px; margin:40px auto 0; background:var(--bg3); border:1px solid var(--border); border-radius:12px; padding:40px; }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .form-group { margin-bottom:12px; }
+  .form-label { display:block; font-size:11px; font-weight:600; color:var(--text-muted); margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px; }
+  .form-input,.form-select { width:100%; padding:11px 14px; background:var(--bg); border:1px solid var(--border); border-radius:6px; font-family:'DM Sans',sans-serif; font-size:14px; color:white; outline:none; transition:border-color 0.2s; }
+  .form-input:focus,.form-select:focus { border-color:var(--sky); }
+  .form-input::placeholder { color:var(--text-muted); }
+  .form-select option { background:var(--bg2); }
+  .form-btn { width:100%; padding:15px; border:none; border-radius:8px; font-family:'DM Sans',sans-serif; font-size:16px; font-weight:700; background:var(--sky); color:var(--bg); cursor:pointer; transition:all 0.2s; margin-top:8px; }
+  .form-btn:hover { opacity:0.9; transform:translateY(-1px); }
+  .form-note { text-align:center; margin-top:10px; font-size:12px; color:var(--text-muted); }
+  .thankyou { text-align:center; padding:40px 20px; }
 
   /* ── TRUST BAR ── */
-  .trust-bar {
-    background: var(--dark3);
-    border-top: 1px solid rgba(255,255,255,0.06);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    padding: 28px 5vw;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 16px;
-  }
+  .trust-bar { background:var(--bg3); padding:60px 5vw; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+  .trust-inner { max-width:1200px; margin:0 auto; }
+  .trust-label { font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--sky); text-align:center; margin-bottom:32px; }
+  .trust-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .trust-card { display:flex; align-items:center; gap:14px; padding:20px 24px; background:var(--surface); border:1px solid var(--border); border-radius:10px; transition:all 0.3s; }
+  .trust-card:hover { border-color:var(--border-light); background:var(--surface-hover); }
+  .trust-icon-wrap { width:42px; height:42px; border-radius:10px; background:var(--sky-dim); border:1px solid rgba(110,198,230,0.15); display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; }
+  .trust-card-text { font-size:14px; font-weight:600; color:white; line-height:1.3; }
+  .trust-card-sub { font-size:12px; font-weight:400; color:var(--text-muted); margin-top:2px; }
 
-  .trust-item {
-    display: flex; align-items: center; gap: 12px;
-    font-size: 13px; color: var(--muted);
-  }
-  .trust-icon { font-size: 18px; }
+  /* ── CONTACT ── */
+  .contact { background:var(--bg); position:relative; overflow:hidden; }
+  .contact::before { content:''; position:absolute; top:-100px; right:-100px; width:400px; height:400px; background:radial-gradient(circle,rgba(110,198,230,0.05) 0%,transparent 70%); }
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin-top:40px; position:relative; z-index:2; }
+  .contact-promises { display:flex; flex-direction:column; gap:14px; }
+  .promise { display:flex; align-items:flex-start; gap:12px; }
+  .promise-check { width:22px; height:22px; border-radius:50%; background:var(--sky); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; font-size:12px; color:var(--bg); font-weight:700; }
+  .promise-text { font-size:15px; color:var(--text); line-height:1.5; }
+  .promise-text strong { color:white; font-weight:600; }
+  .contact-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:40px; }
+  .contact-card .card-label { font-size:11px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--sky); margin-bottom:16px; }
+  .contact-card .card-name { font-family:'Fraunces',serif; font-size:28px; font-weight:700; color:white; margin-bottom:4px; }
+  .contact-card .card-role { font-size:14px; color:var(--text); margin-bottom:24px; }
+  .contact-card .btn { width:100%; justify-content:center; margin-bottom:10px; }
+  .contact-card .card-note { margin-top:16px; padding-top:16px; border-top:1px solid var(--border); font-size:13px; color:var(--text-muted); line-height:1.6; }
 
   /* ── FOOTER ── */
-  footer {
-    background: var(--dark2);
-    border-top: 1px solid rgba(255,255,255,0.06);
-    padding: 40px 5vw;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 20px;
-  }
-
-  .footer-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 24px; letter-spacing: 2px; color: var(--white);
-  }
-  .footer-logo span { color: var(--teal-light); }
-
-  .footer-tagline {
-    font-size: 13px; color: var(--muted);
-    margin-top: 4px;
-  }
-
-  .footer-links {
-    display: flex; gap: 28px; list-style: none;
-  }
-  .footer-links a {
-    font-size: 13px; color: var(--muted);
-    text-decoration: none; transition: color 0.2s;
-  }
-  .footer-links a:hover { color: var(--teal-light); }
-
-  .footer-contact {
-    text-align: right;
-  }
-  .footer-phone {
-    font-family: 'DM Mono', monospace;
-    font-size: 16px; color: var(--white); font-weight: 500;
-  }
-  .footer-email {
-    font-size: 13px; color: var(--muted); margin-top: 4px;
-  }
+  footer { background:var(--bg2); padding:40px 5vw; border-top:1px solid var(--border); }
+  .footer-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+  .footer-brand { font-size:17px; font-weight:700; color:white; }
+  .footer-brand span { color:var(--sky); }
+  .footer-sub { font-size:13px; color:var(--text-muted); margin-top:4px; }
+  .footer-links { display:flex; gap:24px; list-style:none; }
+  .footer-links a { font-size:13px; color:var(--text-muted); text-decoration:none; transition:color 0.2s; }
+  .footer-links a:hover { color:var(--sky); }
+  .footer-contact { text-align:right; }
+  .footer-phone { font-family:'DM Mono',monospace; font-size:16px; font-weight:600; color:white; }
+  .footer-email { font-size:13px; margin-top:2px; }
+  .footer-email a { color:var(--text-muted); text-decoration:none; }
+  .footer-email a:hover { color:var(--sky); }
 
   /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
-  @keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes ticker { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
+  .fade-up { opacity:0; transform:translateY(24px); transition:all 0.6s cubic-bezier(0.16,1,0.3,1); }
+  .fade-up.visible { opacity:1; transform:translateY(0); }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; padding-top: 120px; padding-bottom: 60px; }
-    .hero::before { display: none; }
-    .hero-left { padding-right: 0; }
-    .hero-right { margin-top: 40px; }
-    .hero-stat-grid { padding-left: 0; }
-    .how-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-    .market-cards { grid-template-columns: 1fr; }
-    .results-grid { grid-template-columns: 1fr; }
-    .result-card.large { grid-row: span 1; }
-    nav .nav-links { display: none; }
+  @media (max-width:900px) {
+    .hero { flex-direction:column; justify-content:flex-start; align-items:stretch; }
+    .hero-content { padding-bottom:60px; }
+    .hero-stats { position:relative; bottom:auto; flex-wrap:wrap; }
+    .hero-stat { flex:1 1 45%; }
+    .qualifier-inner { grid-template-columns:1fr; }
+    .how-grid { grid-template-columns:1fr; }
+    .proof-grid { grid-template-columns:1fr; }
+    .proof-card.featured { grid-row:span 1; }
+    .compare-header, .compare-row { grid-template-columns:1fr 1fr 1fr; }
+    .compare-cell.label { font-size:12px; }
+    .stat-grid { grid-template-columns:1fr 1fr; }
+    .form-row { grid-template-columns:1fr; }
+    .contact-grid { grid-template-columns:1fr; }
+    .trust-grid { grid-template-columns:1fr; }
+    .footer-inner { flex-direction:column; text-align:center; }
+    .footer-contact { text-align:center; }
+    .nav-links { display:none; }
+    .mobile-menu { display:block; }
   }
+
+
+  /* ── EMBEDDED ROI CALCULATOR STYLES ── */
+:root {
+  --bg:#080C10; --bg2:#0C1117; --bg3:#111820; --bg4:#161E28;
+  --surface:rgba(255,255,255,0.04); --surface2:rgba(255,255,255,0.07);
+  --border:rgba(255,255,255,0.08); --border-light:rgba(255,255,255,0.15);
+  --sky:#6EC6E6; --sky-dim:rgba(110,198,230,0.12);
+  --mint:#4DD9AC; --mint-dim:rgba(77,217,172,0.12);
+  --amber:#F59E0B; --amber-dim:rgba(245,158,11,0.12);
+  --purple:#A78BFA; --purple-dim:rgba(167,139,250,0.12);
+  --red:#EF4444;
+  --text:rgba(255,255,255,0.58); --text-muted:rgba(255,255,255,0.35); --text-bright:rgba(255,255,255,0.88);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;}
+body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:0.02;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:128px;}
+
+/* ── HEADER ── */
+.header{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:64px;}
+.header-brand{font-size:16px;font-weight:700;color:white;}
+.header-brand span{color:var(--sky);}
+.header-sub{font-size:12px;color:var(--text-muted);margin-top:2px;}
+.header-tag{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--sky);background:var(--sky-dim);border:1px solid rgba(110,198,230,0.2);padding:5px 12px;border-radius:3px;}
+
+/* ── PERSPECTIVE GUIDE ── */
+.perspective{background:var(--bg3);border-bottom:1px solid var(--border);overflow:hidden;}
+.perspective-toggle{display:flex;align-items:center;justify-content:space-between;padding:14px 5vw;cursor:pointer;user-select:none;}
+.perspective-toggle-label{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);}
+.perspective-toggle-sub{font-size:12px;color:var(--text-muted);margin-left:12px;}
+.perspective-toggle-arrow{font-size:14px;color:var(--text-muted);transition:transform 0.3s;}
+.perspective-toggle-arrow.open{transform:rotate(180deg);}
+.perspective-body{max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+.perspective-body.open{max-height:500px;}
+.perspective-inner{padding:0 5vw 24px;}
+.btype-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.btype-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;}
+.btype-name{font-size:12px;font-weight:700;color:white;margin-bottom:8px;}
+.btype-row{display:flex;justify-content:space-between;margin-bottom:3px;}
+.btype-key{font-size:11px;color:var(--text-muted);}
+.btype-val{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-bright);}
+.btype-badge{display:inline-block;padding:2px 8px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:6px;}
+.badge-sm{background:var(--mint-dim);color:var(--mint);}
+.badge-md{background:var(--sky-dim);color:var(--sky);}
+.badge-lg{background:var(--amber-dim);color:var(--amber);}
+.badge-xl{background:var(--purple-dim);color:var(--purple);}
+.perspective-questions{margin-top:16px;padding:14px 18px;background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.15);border-radius:8px;}
+.perspective-questions-title{font-size:12px;font-weight:700;color:var(--amber);margin-bottom:8px;}
+.perspective-questions-list{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;}
+.perspective-questions-list li{font-size:12px;color:var(--text-bright);line-height:1.6;list-style:none;padding-left:14px;position:relative;}
+.perspective-questions-list li::before{content:'→';position:absolute;left:0;color:var(--amber);}
+
+/* ── MAIN LAYOUT ── */
+.main{display:grid;grid-template-columns:1fr 440px;gap:0;max-width:1400px;margin:0 auto;}
+
+/* ── INPUTS PANEL ── */
+.inputs-panel{padding:32px 5vw 60px;border-right:1px solid var(--border);}
+.section-block{margin-bottom:32px;}
+.section-block-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+.section-block-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.icon-filter{background:var(--sky-dim);border:1px solid rgba(110,198,230,0.2);}
+.icon-labor{background:var(--amber-dim);border:1px solid rgba(245,158,11,0.2);}
+.icon-energy{background:var(--mint-dim);border:1px solid rgba(77,217,172,0.2);}
+.icon-storage{background:var(--purple-dim);border:1px solid rgba(167,139,250,0.2);}
+.section-block-title{font-size:14px;font-weight:700;color:white;}
+.section-block-desc{font-size:11px;color:var(--text-muted);margin-top:1px;}
+.optional-tag{margin-left:auto;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);background:var(--surface);border:1px solid var(--border);padding:3px 8px;border-radius:3px;}
+.input-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.input-grid.three{grid-template-columns:1fr 1fr 1fr;}
+.field{display:flex;flex-direction:column;gap:5px;}
+.field label{font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;}
+.field-hint{font-size:11px;color:var(--text-muted);margin-top:-2px;font-style:italic;}
+.inp,.sel{width:100%;padding:10px 13px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:white;outline:none;transition:border-color 0.2s,background 0.2s;appearance:none;}
+.inp:focus,.sel:focus{border-color:var(--sky);background:var(--bg4);}
+.inp::placeholder{color:var(--text-muted);font-weight:400;}
+.inp-prefix-wrap{position:relative;}
+.inp-prefix{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:13px;font-weight:600;color:var(--text-muted);pointer-events:none;}
+.inp-prefix+.inp{padding-left:24px;}
+.inp-suffix-wrap{position:relative;}
+.inp-suffix{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:11px;color:var(--text-muted);pointer-events:none;}
+.inp-suffix~.inp{padding-right:38px;}
+.toggle-row{display:flex;align-items:center;gap:10px;margin-bottom:14px;cursor:pointer;user-select:none;}
+.toggle{width:34px;height:19px;border-radius:10px;background:var(--border);position:relative;transition:background 0.2s;flex-shrink:0;}
+.toggle.on{background:var(--sky);}
+.toggle::after{content:'';position:absolute;width:13px;height:13px;background:white;border-radius:50%;top:3px;left:3px;transition:transform 0.2s;}
+.toggle.on::after{transform:translateX(15px);}
+.toggle-label{font-size:13px;color:var(--text-bright);font-weight:500;}
+.collapsible{overflow:hidden;transition:max-height 0.3s ease;}
+
+/* ── RESULTS PANEL ── */
+.results-panel{position:sticky;top:0;align-self:start;padding:28px 28px 60px;background:var(--bg2);}
+
+/* View tabs */
+.view-tabs{display:flex;gap:4px;margin-bottom:24px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:4px;}
+.view-tab{flex:1;padding:9px 8px;border:none;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.2s;background:transparent;color:var(--text-muted);letter-spacing:0.3px;}
+.view-tab.active{background:var(--sky);color:var(--bg);}
+
+/* Big total */
+.total-card{border-radius:12px;padding:24px 20px;margin-bottom:18px;text-align:center;}
+.total-card.quick{background:linear-gradient(135deg,rgba(110,198,230,0.1),rgba(77,217,172,0.06));border:1px solid rgba(110,198,230,0.2);}
+.total-card.pm{background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(110,198,230,0.06));border:1px solid rgba(245,158,11,0.2);}
+.total-card.owner{background:linear-gradient(135deg,rgba(167,139,250,0.1),rgba(77,217,172,0.06));border:1px solid rgba(167,139,250,0.2);}
+.total-eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;}
+.eyebrow-quick{color:var(--sky);}
+.eyebrow-pm{color:var(--amber);}
+.eyebrow-owner{color:var(--purple);}
+.total-number{font-family:'Fraunces',serif;font-size:clamp(32px,3.5vw,46px);font-weight:700;color:white;line-height:1;margin-bottom:4px;}
+.total-sub{font-size:12px;color:var(--text);}
+
+/* Breakdown items */
+.breakdown{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+.bi{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:8px;border:1px solid var(--border);background:var(--surface);transition:all 0.3s;}
+.bi.on{border-color:rgba(110,198,230,0.2);background:rgba(110,198,230,0.05);}
+.bi.off{opacity:0.38;}
+.bi-icon{font-size:16px;flex-shrink:0;}
+.bi-content{flex:1;}
+.bi-label{font-size:12px;font-weight:600;color:var(--text-bright);}
+.bi-sub{font-size:10px;color:var(--text-muted);margin-top:1px;}
+.bi-amt{font-family:'DM Mono',monospace;font-size:14px;font-weight:500;color:var(--mint);flex-shrink:0;}
+.bi-amt.zero{color:var(--text-muted);}
+
+/* Metric rows */
+.metric-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:14px;}
+.metric-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--border);}
+.metric-row:last-child{border-bottom:none;padding-bottom:0;}
+.metric-row:first-child{padding-top:0;}
+.metric-key{font-size:12px;color:var(--text-muted);}
+.metric-val{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--text-bright);}
+.metric-val.highlight{color:var(--sky);font-size:15px;font-weight:600;}
+.metric-val.green{color:var(--mint);}
+.metric-val.amber{color:var(--amber);}
+.metric-val.purple{color:var(--purple);}
+
+/* Bars */
+.projection{margin-bottom:16px;}
+.proj-title{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;}
+.bar-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.bar-yr{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-muted);width:24px;flex-shrink:0;}
+.bar-track{flex:1;height:18px;background:var(--surface);border-radius:3px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:3px;transition:width 0.5s cubic-bezier(0.16,1,0.3,1);min-width:0;}
+.bar-fill.positive{background:linear-gradient(90deg,var(--sky),var(--mint));}
+.bar-fill.negative{background:linear-gradient(90deg,#EF4444,#F87171);}
+.bar-val{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-bright);width:62px;text-align:right;flex-shrink:0;}
+
+/* KPI grid */
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
+.kpi-box{padding:14px 12px;border-radius:8px;text-align:center;}
+.kpi-box.sky-box{background:var(--sky-dim);border:1px solid rgba(110,198,230,0.2);}
+.kpi-box.mint-box{background:var(--mint-dim);border:1px solid rgba(77,217,172,0.2);}
+.kpi-box.amber-box{background:var(--amber-dim);border:1px solid rgba(245,158,11,0.2);}
+.kpi-box.purple-box{background:var(--purple-dim);border:1px solid rgba(167,139,250,0.2);}
+.kpi-val{font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:white;line-height:1;}
+.kpi-lbl{font-size:10px;color:var(--text-muted);margin-top:4px;line-height:1.4;}
+
+/* Quality badge */
+.quality-bar{display:flex;gap:8px;margin-bottom:16px;padding:12px 14px;background:rgba(77,217,172,0.06);border:1px solid rgba(77,217,172,0.15);border-radius:8px;}
+.quality-icon{font-size:20px;flex-shrink:0;}
+.quality-content{}
+.quality-title{font-size:12px;font-weight:700;color:white;margin-bottom:2px;}
+.quality-desc{font-size:11px;color:var(--text);line-height:1.5;}
+
+/* CTA */
+.results-cta{background:white;color:var(--bg);border:none;border-radius:6px;width:100%;padding:13px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all 0.2s;text-align:center;text-decoration:none;display:block;margin-bottom:8px;}
+.results-cta:hover{opacity:0.9;transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,0.3);}
+.results-note{font-size:11px;color:var(--text-muted);text-align:center;line-height:1.5;}
+
+/* Footer */
+.calc-footer{border-top:1px solid var(--border);padding:18px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;background:var(--bg2);}
+.calc-footer a{color:var(--sky);text-decoration:none;font-size:12px;}
+.calc-footer-note{font-size:11px;color:var(--text-muted);}
+
+/* Responsive */
+@media(max-width:1050px){
+  .main{grid-template-columns:1fr;}
+  .inputs-panel{border-right:none;border-bottom:1px solid var(--border);}
+  .results-panel{position:relative;}
+  .btype-grid{grid-template-columns:1fr 1fr;}
+  .perspective-questions-list{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .input-grid,.input-grid.three{grid-template-columns:1fr;}
+  .btype-grid{grid-template-columns:1fr;}
+  .kpi-grid{grid-template-columns:1fr 1fr;}
+}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Galex<span>C</span></a>
+  <a href="#" class="nav-brand">Filter &amp; <span>Forget</span></a>
   <ul class="nav-links">
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#markets">Markets</a></li>
+    <li><a href="#merv">MERV Guide</a></li>
     <li><a href="#results">Results</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact" class="nav-cta">Free Audit</a></li>
+    <li><a href="#getstarted">ROI Calculator</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#getstarted" class="nav-cta">See Your Savings</a></li>
   </ul>
+  <button class="mobile-menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-grid-overlay"></div>
-
-  <div class="hero-left">
-    <div class="hero-badge">Water Cost Reduction Specialists</div>
-
-    <h1>
-      Stop Paying For
-      <span class="accent">Air In Your</span>
-      Water Bill.
-    </h1>
-
-    <p class="hero-sub">
-      GalexC helps regional hotel, restaurant, and commercial property operators cut water and sewer costs 15–28% — with a patented device, a 2-hour install, and a 90-day money-back guarantee.
-    </p>
-
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Phoenix Commercial HVAC Filtration Upgrade</div>
+    <h1>Your HVAC Filters Are<br><em>Costing You More</em><br>Than They Should.</h1>
+    <p class="hero-sub">Traditional disposable filters restrict airflow as they load — forcing your HVAC to work harder, wear faster, and cost more. <strong style="color:white;">Blade Air electrostatic technology</strong> changes that. Better air. Fewer changes. Lower bills.</p>
     <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">
-        Get a Free Water Audit →
-      </a>
-      <a href="#how" class="btn-secondary">
-        See How It Works
-      </a>
+      <a href="#getstarted" class="btn btn-light">Get Your Free Property Assessment →</a>
+      <a href="#how" class="btn btn-ghost">See How It Works</a>
     </div>
   </div>
-
-  <div class="hero-right">
-    <div class="hero-stat-grid">
-      <div class="stat-card featured">
-        <div class="stat-num">20,000+</div>
-        <div class="stat-label">Systems installed across North America — with proven, verified results</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">15–28%</div>
-        <div class="stat-label">Typical water + sewer reduction</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">~12mo</div>
-        <div class="stat-label">Average payback period</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">2hr</div>
-        <div class="stat-label">Installation. No shutdown needed.</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">90</div>
-        <div class="stat-label">Day money-back guarantee</div>
-      </div>
-    </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">15–40%</div><div class="label">HVAC energy cost reduction</div></div>
+    <div class="hero-stat"><div class="num">50%</div><div class="label">Fewer filter change-outs</div></div>
+    <div class="hero-stat"><div class="num">18–24 mo</div><div class="label">Typical payback period</div></div>
+    <div class="hero-stat"><div class="num">2-Yr</div><div class="label">Frame warranty</div></div>
   </div>
 </section>
 
 <!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-inner">
-    <span class="ticker-item"><span class="ticker-dot"></span>Vanderbilt University Medical Center — 23% Reduction — $90,000/yr Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Meliá Orlando Suite Hotel — 19% Reduction — $13,382/yr Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Doubletree Tarrytown — 10–15% Reduction — Consistent Monthly Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>RWJ Barnabas Health — 19% Reduction — Sub-6 Month Payback</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Panna To Go Food Manufacturing — 33.5% Reduction — $24,266/yr Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>One Waterfront Towers — 13% Reduction — 7-Month Payback</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Vanderbilt University Medical Center — 23% Reduction — $90,000/yr Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Meliá Orlando Suite Hotel — 19% Reduction — $13,382/yr Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Doubletree Tarrytown — 10–15% Reduction — Consistent Monthly Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>RWJ Barnabas Health — 19% Reduction — Sub-6 Month Payback</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Panna To Go Food Manufacturing — 33.5% Reduction — $24,266/yr Savings</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>One Waterfront Towers — 13% Reduction — 7-Month Payback</span>
+<div class="ticker-wrap">
+  <div class="ticker-fade-l"></div>
+  <div class="ticker-fade-r"></div>
+  <div class="ticker-track-wrap">
+    <div class="ticker-track">
+      <div class="ticker-card"><span class="ticker-badge">Property Mgmt</span>JLL — <strong>Significant Airborne Dust Reduction</strong> — Verified</div>
+      <div class="ticker-card"><span class="ticker-badge">Healthcare REIT</span>NorthWest Healthcare — <strong>Only 16% Airflow Drop After 6 Months</strong> — Beyond Expectations</div>
+      <div class="ticker-card"><span class="ticker-badge">Commercial</span>Hedrick Associates — <strong>Real Savings, Clear Performance Improvements</strong></div>
+      <div class="ticker-card"><span class="ticker-badge">Industrial</span>Agilent Technologies — <strong>Easy Install, Space Savings, No Pallet Storage</strong></div>
+      <div class="ticker-card"><span class="ticker-badge">Performance</span>Pro Filter — <strong>MERV-13 Filtration at MERV-8 Pressure Drop</strong></div>
+      <div class="ticker-card"><span class="ticker-badge">Energy</span>Average Building — <strong>$13,700+ Annual Energy Savings</strong></div>
+      <div class="ticker-card"><span class="ticker-badge">Property Mgmt</span>JLL — <strong>Significant Airborne Dust Reduction</strong> — Verified</div>
+      <div class="ticker-card"><span class="ticker-badge">Healthcare REIT</span>NorthWest Healthcare — <strong>Only 16% Airflow Drop After 6 Months</strong> — Beyond Expectations</div>
+      <div class="ticker-card"><span class="ticker-badge">Commercial</span>Hedrick Associates — <strong>Real Savings, Clear Performance Improvements</strong></div>
+      <div class="ticker-card"><span class="ticker-badge">Industrial</span>Agilent Technologies — <strong>Easy Install, Space Savings, No Pallet Storage</strong></div>
+      <div class="ticker-card"><span class="ticker-badge">Performance</span>Pro Filter — <strong>MERV-13 Filtration at MERV-8 Pressure Drop</strong></div>
+      <div class="ticker-card"><span class="ticker-badge">Energy</span>Average Building — <strong>$13,700+ Annual Energy Savings</strong></div>
+    </div>
   </div>
 </div>
 
+<!-- QUALIFIER -->
+<section class="qualifier">
+  <div class="qualifier-inner fade-up">
+    <div class="qual-card"><div class="qual-icon">🏢</div><div><h3>Multifamily Property Owners</h3><p>Apartment and mixed-use communities with central air handling units or rooftop units. Fewer filter changes means less maintenance staff time and lower OpEx across every unit.</p></div></div>
+    <div class="qual-card"><div class="qual-icon">📋</div><div><h3>Property Management Companies</h3><p>Managing HVAC maintenance schedules across a portfolio? Blade Air cuts change-out frequency in half — reducing service visits, storage space, and per-property labor costs.</p></div></div>
+    <div class="qual-card"><div class="qual-icon">🏗️</div><div><h3>Commercial Building Owners</h3><p>Office, retail, industrial, and healthcare buildings with significant HVAC footprints. HVAC accounts for 35–40% of commercial building energy use — filtration is where the savings start.</p></div></div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
-<section id="how">
-  <div class="section-label">// How It Works</div>
-  <h2>The Problem Is In<br>Your Water Meter.</h2>
-  <p class="section-intro">Your water meter measures volume — not just water. It can't distinguish between water and the air that enters the line as pressure drops. You're billed for both. The Smart Valve fixes that.</p>
-
-  <div class="how-grid">
-    <div class="how-steps">
-      <div class="how-step">
-        <div class="step-num">01</div>
-        <div class="step-icon">💧</div>
-        <div class="step-content">
-          <h3>Air Enters Your Line</h3>
-          <p>When you demand water, pressure drops. As pressure drops, air expands and enters the water volume passing through your meter. Your meter measures it as water.</p>
-        </div>
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="section-eyebrow">How It Works</div>
+    <div class="section-title">The Problem Is in<br>Your Filter Rack.</div>
+    <div class="section-desc">Standard pleated filters restrict airflow as they load with particles — forcing your HVAC fan to work harder, use more energy, and wear faster. Blade Air's electrostatic technology solves this at the source.</div>
+    <div class="how-grid">
+      <div class="how-steps fade-up">
+        <div class="how-step"><div class="step-num">01</div><div class="step-content"><h3>Standard Filters Restrict Airflow Over Time</h3><p>As a pleated filter collects dust and particles, its resistance to airflow increases. Your HVAC fan has to work harder to push the same volume of air — consuming more energy and creating wear on motors and coils.</p></div></div>
+        <div class="how-step"><div class="step-num">02</div><div class="step-content"><h3>Blade Air Uses Electromagnetic Polarization</h3><p>The Blade Air Pro Filter uses active electromagnetic polarization to attract and capture particles — including viruses and bacteria down to 0.007 microns — without the high-resistance media that chokes airflow. MERV-13 performance at MERV-8 pressure drop.</p></div></div>
+        <div class="how-step"><div class="step-num">03</div><div class="step-content"><h3>Your HVAC Runs Easier — and Longer</h3><p>With consistent low-pressure airflow, fan motors consume 15% less energy. Coils stay cleaner. Equipment runs cooler. You see reduced utility costs and fewer emergency service calls.</p></div></div>
+        <div class="how-step"><div class="step-num">04</div><div class="step-content"><h3>Change Filters Less Often. No Retrofitting.</h3><p>Blade Air filters have 8.5× the dust-holding capacity of standard pleated filters — so you change them 50% less often. They install directly into your existing 1", 2", or 5" frames. No HVAC modifications required.</p></div></div>
       </div>
-      <div class="how-step">
-        <div class="step-num">02</div>
-        <div class="step-icon">⚙️</div>
-        <div class="step-content">
-          <h3>The Smart Valve Maintains Pressure</h3>
-          <p>The patented Variable Flow Control device installs upstream of your meter, maintaining higher pressure at the meter. Air can't expand — so it doesn't get measured.</p>
-        </div>
-      </div>
-      <div class="how-step">
-        <div class="step-num">03</div>
-        <div class="step-icon">📊</div>
-        <div class="step-content">
-          <h3>Your Bill Drops Immediately</h3>
-          <p>From the first billing cycle after installation, you pay only for water you actually use. Average reduction: 15–28% on combined water and sewer charges.</p>
-        </div>
-      </div>
-      <div class="how-step">
-        <div class="step-num">04</div>
-        <div class="step-icon">🔧</div>
-        <div class="step-content">
-          <h3>Externally Adjustable — Forever</h3>
-          <p>The 2nd and 3rd generation Smart Valves are externally adjustable for maximum performance. Fine-tune to your facility, adapt to future system changes — no shutdowns, ever.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="how-visual">
-      <div class="visual-header">// Monthly Water Consumption — Before vs. After</div>
-      <div class="meter-diagram">
-        <div class="meter-row">
-          <div class="meter-label">Before</div>
-          <div class="meter-bar-wrap">
-            <div class="meter-bar bar-before">2,850 CCF/mo</div>
+      <div class="how-visual fade-up">
+        <div class="how-vis-inner">
+          <div class="how-vis-header">Average annual Pro Filter impact — per building</div>
+          <div class="stat-grid">
+            <div class="stat-box"><div class="val">15–40%</div><div class="desc">HVAC energy reduction</div></div>
+            <div class="stat-box"><div class="val">50%</div><div class="desc">Fewer filter change-outs</div></div>
+            <div class="stat-box"><div class="val">$13.7K+</div><div class="desc">Annual energy savings</div></div>
+            <div class="stat-box"><div class="val">8.5×</div><div class="desc">Greater dust capacity vs. pleated</div></div>
           </div>
-          <div class="meter-value">100%</div>
-        </div>
-        <div class="meter-row">
-          <div class="meter-label">After</div>
-          <div class="meter-bar-wrap">
-            <div class="meter-bar bar-after">2,195 CCF/mo</div>
+          <div class="how-note" style="margin-top:16px;">Example: A 200-unit Phoenix apartment community with 4 rooftop units. Switching to Blade Air reduces HVAC energy use, eliminates 2 filter change-outs per unit per year, and keeps coils cleaner — reducing service calls and extending equipment life. <strong>Typical payback: 18–24 months.</strong></div>
+          <div class="how-certs">
+            <span>MERV-13 FILTRATION</span>
+            <span>MERV-8 PRESSURE DROP</span>
+            <span>CARB 867 CERT.</span>
+            <span>UL 2998 COMPLIANT</span>
+            <span>OZONE-FREE</span>
+            <span>2-YR WARRANTY</span>
           </div>
-          <div class="meter-value">77%</div>
-        </div>
-        <div class="meter-row">
-          <div class="meter-label">Savings</div>
-          <div class="meter-bar-wrap">
-            <div class="meter-bar bar-savings">655 CCF/mo</div>
-          </div>
-          <div class="meter-value" style="color:var(--orange)">23%</div>
-        </div>
-      </div>
-      <div class="diagram-note">
-        Actual data from Vanderbilt University Medical Center. 23% reduction = <strong>$90,000/year</strong> in annualized savings. 551,276 gallons saved annually.
-      </div>
-      <div style="margin-top:28px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.08);">
-        <div style="display:flex; gap:20px; flex-wrap:wrap;">
-          <div style="font-size:11px; color:var(--muted); font-family:'DM Mono',monospace;">3 ACTIVE PATENTS</div>
-          <div style="font-size:11px; color:var(--muted); font-family:'DM Mono',monospace;">NSF/ANSI 61 &amp; 372</div>
-          <div style="font-size:11px; color:var(--muted); font-family:'DM Mono',monospace;">LEAD FREE CERTIFIED</div>
-          <div style="font-size:11px; color:var(--muted); font-family:'DM Mono',monospace;">10-YR WARRANTY</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MARKETS -->
-<section id="markets">
-  <div class="markets-header">
-    <div>
-      <div class="section-label">// Who We Serve</div>
-      <h2>Built For Regional<br>Operators.</h2>
-    </div>
-    <p class="section-intro" style="max-width:380px; margin-bottom:0;">
-      We focus on multi-property operators who make their own decisions — no corporate approvals, no procurement committees. Just owners who want their costs down.
-    </p>
-  </div>
-
-  <div class="market-cards">
-    <div class="market-card">
-      <div class="market-icon">🏨</div>
-      <h3>Hotel Franchisees</h3>
-      <p>Own 3–15 properties under a flag (Marriott, Hilton, IHG, Best Western)? You control the operating budget — and water is one of your top 5 utility line items. We model savings across your entire portfolio.</p>
-      <div class="market-savings">📉 Typical: 15–20% reduction</div>
-    </div>
-    <div class="market-card">
-      <div class="market-icon">🏢</div>
-      <h3>Commercial Property Owners</h3>
-      <p>Multi-building owners of office, retail, or mixed-use properties. Higher occupancy = higher water use. We install once and savings compound year over year — especially as rates keep rising.</p>
-      <div class="market-savings">📉 Typical: 13–25% reduction</div>
-    </div>
-    <div class="market-card">
-      <div class="market-icon">🍽️</div>
-      <h3>Restaurant Franchisees</h3>
-      <p>Own 10–50 locations of a regional or national brand? Every unit is paying for air they don't use. A portfolio analysis often reveals $30K–$150K in annual savings hiding in plain sight.</p>
-      <div class="market-savings">📉 Typical: 15–28% reduction</div>
-    </div>
-    <div class="market-card">
-      <div class="market-icon">🏥</div>
-      <h3>Healthcare Facilities</h3>
-      <p>Hospitals and ambulatory care centers are among the highest water users per square foot. Engineering-verified results, supports sustainability mandates, and fastest ROI segment we serve.</p>
-      <div class="market-savings">📉 Typical: 19–23% reduction</div>
-    </div>
-    <div class="market-card">
-      <div class="market-icon">🚿</div>
-      <h3>Car Washes</h3>
-      <p>High-volume water users billed on every gallon. The Smart Valve's impact at a car wash is measured in dollars per car — and it adds up fast across a multi-location operation.</p>
-      <div class="market-savings">📉 Typical: 15–28% reduction</div>
-    </div>
-    <div class="market-card">
-      <div class="market-icon">🏭</div>
-      <h3>Food & Beverage Manufacturing</h3>
-      <p>Water is a direct input cost — and most manufacturers are shocked to learn how much they're overpaying. One food manufacturer in Miami cut usage 33.5% and saved $24,266 per year.</p>
-      <div class="market-savings">📉 Typical: 20–35% reduction</div>
-    </div>
-  </div>
-</section>
-
-<!-- RESULTS -->
-<section id="results">
-  <div class="section-label">// Verified Results</div>
-  <h2>Real Numbers.<br>Real Properties.</h2>
-  <p class="section-intro">Every case study below reflects verified, measured savings from actual installations — not projections.</p>
-
-  <div class="results-grid">
-    <div class="result-card large">
-      <div class="result-badge">Healthcare</div>
-      <div class="result-org">Vanderbilt University Medical Center</div>
-      <div class="result-type">Large Academic Medical Center — Nashville, TN</div>
-      <div class="result-stats">
-        <div class="result-stat">
-          <div class="num">23%</div>
-          <div class="unit">Consumption reduction</div>
+<!-- MERV CHART -->
+<section style="background:var(--bg); padding:80px 5vw 40px; border-top:1px solid var(--border);" id="merv">
+  <div class="section-inner">
+    <div class="section-eyebrow">Understanding Air Filtration</div>
+    <div class="section-title">What Is a MERV Rating<br>and Why Does It Matter?</div>
+    <div class="section-desc" style="margin-bottom:40px;">MERV stands for Minimum Efficiency Reporting Value — it measures how small a particle your filter captures. Higher MERV = finer filtration. The catch: standard high-MERV filters restrict airflow, forcing your HVAC to work harder.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:32px;" class="fade-up">
+      <!-- MERV-8 -->
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:24px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#888;"></div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Standard</div>
+        <div style="font-family:'Fraunces',serif;font-size:36px;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px;">MERV-8</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:16px;">Most commercial buildings</div>
+        <div style="font-size:12px;color:var(--text-bright);margin-bottom:4px;">Captures down to <strong style="color:white;">3 microns</strong></div>
+        <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-bottom:16px;">
+          <div style="height:100%;width:35%;background:#888;border-radius:2px;"></div>
         </div>
-        <div class="result-stat">
-          <div class="num">$90K</div>
-          <div class="unit">Annual savings</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;">
+          <div style="color:var(--mint);">✓ Pollen &amp; mold spores</div>
+          <div style="color:var(--mint);">✓ Dust mites &amp; pet dander</div>
+          <div style="color:#EF4444;">✗ Bacteria</div>
+          <div style="color:#EF4444;">✗ Virus carriers</div>
+          <div style="color:#EF4444;">✗ Fine combustion particles</div>
         </div>
-        <div class="result-stat">
-          <div class="num">551K</div>
-          <div class="unit">Gallons saved/year</div>
-        </div>
+        <div style="margin-top:14px;padding:8px;background:rgba(255,255,255,0.04);border-radius:6px;font-size:11px;color:var(--text-muted);">Pressure drop: Low ✓<br>HVAC energy impact: Minimal</div>
       </div>
-      <div class="result-quote">
-        "The Smart Valve appears to be making a significant impact. Through 7 months we have experienced a savings of about 23%, equaling to more than $67,000. If this trend continues, we should see savings in excess of $90,000/year."
-        <div class="result-attribution">— Mike Gable, P.E., CEM, CHFM</div>
+      <!-- MERV-13 Pleated -->
+      <div style="background:var(--bg3);border:1px solid rgba(245,158,11,0.3);border-radius:10px;padding:24px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--amber);"></div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px;">Upgraded — But Costly</div>
+        <div style="font-family:'Fraunces',serif;font-size:36px;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px;">MERV-13</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:16px;">Standard pleated filter</div>
+        <div style="font-size:12px;color:var(--text-bright);margin-bottom:4px;">Captures down to <strong style="color:white;">0.3 microns</strong></div>
+        <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-bottom:16px;">
+          <div style="height:100%;width:75%;background:var(--amber);border-radius:2px;"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;">
+          <div style="color:var(--mint);">✓ Pollen, mold, dust mites</div>
+          <div style="color:var(--mint);">✓ Bacteria &amp; sneeze nuclei</div>
+          <div style="color:var(--mint);">✓ Virus carriers</div>
+          <div style="color:#EF4444;">✗ Free viruses</div>
+          <div style="color:#EF4444;">✗ VOCs &amp; combustion gases</div>
+        </div>
+        <div style="margin-top:14px;padding:8px;background:rgba(245,158,11,0.08);border-radius:6px;font-size:11px;color:var(--amber);">Pressure drop: HIGH ⚠<br>HVAC works harder = higher energy bills</div>
+      </div>
+      <!-- Blade Air -->
+      <div style="background:linear-gradient(180deg,rgba(77,217,172,0.08) 0%,var(--bg3) 100%);border:1px solid rgba(77,217,172,0.3);border-radius:10px;padding:24px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sky),var(--mint));"></div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mint);margin-bottom:8px;">The Breakthrough</div>
+        <div style="font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:white;line-height:1.1;margin-bottom:4px;">Blade Air<br>Pro Filter</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:16px;">Electromagnetic polarization</div>
+        <div style="font-size:12px;color:var(--text-bright);margin-bottom:4px;">Captures down to <strong style="color:var(--mint);">0.007 microns ★</strong></div>
+        <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-bottom:16px;">
+          <div style="height:100%;width:100%;background:linear-gradient(90deg,var(--sky),var(--mint));border-radius:2px;"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;">
+          <div style="color:var(--mint);">✓ Everything MERV-13 captures</div>
+          <div style="color:var(--mint);">✓ Free viruses &amp; bacteria</div>
+          <div style="color:var(--mint);">✓ 46% VOC reduction in 48 hrs</div>
+          <div style="color:var(--mint);">✓ 40× smaller than MERV-13</div>
+          <div style="color:var(--mint);">✓ Zero ozone (CARB certified)</div>
+        </div>
+        <div style="margin-top:14px;padding:8px;background:rgba(77,217,172,0.08);border:1px solid rgba(77,217,172,0.15);border-radius:6px;font-size:11px;color:var(--mint);">Pressure drop: MERV-8 level ✓<br>MERV-13 air quality — no energy penalty</div>
       </div>
     </div>
-
-    <div class="result-card">
-      <div class="result-badge">Hospitality</div>
-      <div class="result-org">Meliá Orlando Suite Hotel</div>
-      <div class="result-type">Full-Service Hotel — Orlando, FL</div>
-      <div class="result-stats">
-        <div class="result-stat">
-          <div class="num">19%</div>
-          <div class="unit">Combined reduction</div>
-        </div>
-        <div class="result-stat">
-          <div class="num">$13.4K</div>
-          <div class="unit">Annual savings</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="result-card">
-      <div class="result-badge">Multifamily</div>
-      <div class="result-org">One Waterfront Towers</div>
-      <div class="result-type">High-Rise Residential — Honolulu, HI</div>
-      <div class="result-stats">
-        <div class="result-stat">
-          <div class="num">13%</div>
-          <div class="unit">Reduction</div>
-        </div>
-        <div class="result-stat">
-          <div class="num">7mo</div>
-          <div class="unit">Payback period</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="result-card">
-      <div class="result-badge">Hospitality</div>
-      <div class="result-org">Doubletree by Hilton</div>
-      <div class="result-type">Full-Service Hotel — Tarrytown, NY</div>
-      <div class="result-stats">
-        <div class="result-stat">
-          <div class="num">10–15%</div>
-          <div class="unit">Monthly reduction</div>
-        </div>
-      </div>
-      <div class="result-quote">
-        "Consistent savings on our monthly water bill. This is phenomenal and has helped improve our bottom line."
-        <div class="result-attribution">— Rich Friedman, General Manager</div>
-      </div>
-    </div>
-
-    <div class="result-card">
-      <div class="result-badge">Food Manufacturing</div>
-      <div class="result-org">Panna To Go</div>
-      <div class="result-type">Food Manufacturer — Miami, FL</div>
-      <div class="result-stats">
-        <div class="result-stat">
-          <div class="num">33.5%</div>
-          <div class="unit">Reduction</div>
-        </div>
-        <div class="result-stat">
-          <div class="num">$24.3K</div>
-          <div class="unit">Annual savings</div>
-        </div>
-        <div class="result-stat">
-          <div class="num">6mo</div>
-          <div class="unit">Payback</div>
-        </div>
+    <!-- Key insight bar -->
+    <div style="padding:18px 24px;background:rgba(110,198,230,0.08);border:1px solid rgba(110,198,230,0.2);border-radius:8px;display:flex;align-items:center;gap:16px;">
+      <div style="font-size:28px;flex-shrink:0;">💡</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:white;margin-bottom:4px;">The Blade Air Advantage in Plain English</div>
+        <div style="font-size:13px;color:var(--text);line-height:1.7;">Standard MERV-13 filters give you better air but hurt your HVAC — dense media means the fan motor works harder, consuming more energy and wearing faster. Blade Air's electromagnetic polarization captures particles <strong style="color:var(--mint);">40× smaller than MERV-13</strong> using a low-density media that maintains MERV-8 airflow. You get hospital-grade air quality with no energy penalty, no HVAC modification, and a direct 1:1 drop-in replacement for your existing filter frames.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-grid">
-    <div class="about-left">
-      <div class="section-label">// About GalexC</div>
-      <h2>Founded By Someone<br>Who's Done This<br>For 30 Years.</h2>
-
-      <p class="about-text">
-        GalexC Corporate Conservation was founded in 2007 by Doug d'Heilly with a simple premise: regional businesses deserve access to the same water and energy efficiency solutions that Fortune 500 companies use — without the complexity, the corporate middlemen, or the 18-month procurement cycles.
-      </p>
-      <p class="about-text">
-        After more than 15 years focused on ESCOs and large corporations, GalexC is relaunching with a tighter focus on the regional operators who need us most: hotel franchisees, commercial property owners, and multi-unit restaurant groups in the Southwest and beyond.
-      </p>
-      <p class="about-text">
-        We represent the Smart Valve™ by Flow Dynamics — the most proven water cost reduction technology in the market, with 20,000+ verified installations and a 90-day money-back guarantee.
-      </p>
-
-      <div class="about-creds">
-        <div class="cred-item">
-          <div class="cred-icon">🏆</div>
-          <div class="cred-text"><span>Founded 2007</span> — 18+ years in commercial water & energy conservation</div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-icon">🤝</div>
-          <div class="cred-text">Authorized representative of <span>Flow Dynamics Smart Valve™</span></div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-icon">📍</div>
-          <div class="cred-text">Based in <span>Encinitas, California</span> — serving the West Coast and beyond</div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-icon">📋</div>
-          <div class="cred-text">Free water cost analysis — <span>no commitment, no cost</span></div>
-        </div>
+<!-- COMPARISON TABLE -->
+<section class="compare" id="compare">
+  <div class="section-inner">
+    <div class="section-eyebrow">Side by Side</div>
+    <div class="section-title">Standard Filters vs.<br>Blade Air Pro Filter.</div>
+    <div class="section-desc">Every line item below is measurable and verified. This isn't marketing — it's physics and performance data.</div>
+    <div class="compare-table fade-up">
+      <div class="compare-header">
+        <div class="compare-header-cell">Performance Category</div>
+        <div class="compare-header-cell">Standard Pleated Filter</div>
+        <div class="compare-header-cell highlight">Blade Air Pro Filter</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">MERV rating / filtration level</div>
+        <div class="compare-cell bad">MERV-8 typical — captures particles 3–10 microns</div>
+        <div class="compare-cell good"><span class="check">✓</span> MERV-13 performance — captures 0.007 microns</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Pressure drop (airflow resistance)</div>
+        <div class="compare-cell bad">MERV-8: low at first, rises as it loads. MERV-13 pleated: high from day one</div>
+        <div class="compare-cell good"><span class="check">✓</span> MERV-8 pressure drop — stays low throughout filter life</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">HVAC energy impact</div>
+        <div class="compare-cell bad">Fan works harder as filter resistance grows</div>
+        <div class="compare-cell good"><span class="check">✓</span> 15–40% energy reduction — MERV-13 air quality, no energy penalty</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Dust-holding capacity</div>
+        <div class="compare-cell bad">Standard baseline</div>
+        <div class="compare-cell good"><span class="check">✓</span> 8.5× greater capacity</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Change-out frequency</div>
+        <div class="compare-cell bad">Every 1–3 months typically</div>
+        <div class="compare-cell good"><span class="check">✓</span> 50% fewer change-outs</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Installation / retrofit required</div>
+        <div class="compare-cell bad">Fits existing frames</div>
+        <div class="compare-cell good"><span class="check">✓</span> 1:1 drop-in replacement</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">VOC reduction</div>
+        <div class="compare-cell bad"><span class="cross">✗</span> No VOC capture</div>
+        <div class="compare-cell good"><span class="check">✓</span> 46% VOC reduction in 48 hrs</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Storage space required</div>
+        <div class="compare-cell bad">Pallets of boxes — ongoing delivery</div>
+        <div class="compare-cell good"><span class="check">✓</span> Up to 92% less storage needed</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Ozone production</div>
+        <div class="compare-cell bad">—</div>
+        <div class="compare-cell good"><span class="check">✓</span> Zero ozone — CARB certified</div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="about-right">
-      <div class="founder-header">// Founder &amp; Principal</div>
-      <div class="founder-name">Doug d'Heilly</div>
-      <div class="founder-title">President &amp; CEO, GalexC Corporate Conservation</div>
-      <p class="founder-bio">
-        Doug's career has spanned every dimension of the commercial conservation industry — electrical, automation controls, mechanical, and energy efficiency. He brings a systems-level view to water cost problems that most consultants miss entirely.
-      </p>
-      <p class="founder-bio">
-        A graduate of Washington State University, Doug is based in the San Diego metro area and works directly with every GalexC client — no account managers, no hand-offs.
-      </p>
-
-      <div class="career-timeline">
-        <div class="career-item">
-          <div class="career-dot"></div>
-          <div class="career-detail">
-            <div class="career-co">GalexC Corporate Conservation</div>
-            <div class="career-role">Founder & CEO — Conservation & Sustainability Consulting</div>
+<!-- GREEN IMPACT -->
+<section style="background:var(--bg2); padding:100px 5vw; border-top:1px solid var(--border);">
+  <div class="section-inner">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+      <div class="fade-up">
+        <div class="section-eyebrow">Environmental Impact</div>
+        <div class="section-title">Better Filtration.<br>Smaller Footprint.</div>
+        <div class="section-desc" style="margin-bottom:32px;">Better filtration breathes life into your buildings — maximizing energy efficiency, reducing your carbon footprint, cutting operating costs, and enhancing your bottom line. With Blade Air, sustainability and savings aren't a tradeoff. They're the same decision.</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; gap:14px; align-items:flex-start; padding:16px 18px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+            <div style="font-size:22px; flex-shrink:0;">🌿</div>
+            <div><div style="font-size:14px; font-weight:700; color:white; margin-bottom:3px;">240 kg CO₂e Avoided Per Filter, Per Year</div><div style="font-size:13px; color:var(--text); line-height:1.5;">Lower HVAC energy consumption directly reduces Scope 2 emissions. Fewer filter change-outs reduces Scope 3 emissions from manufacturing, transport, and landfill.</div></div>
+          </div>
+          <div style="display:flex; gap:14px; align-items:flex-start; padding:16px 18px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+            <div style="font-size:22px; flex-shrink:0;">♻️</div>
+            <div><div style="font-size:14px; font-weight:700; color:white; margin-bottom:3px;">70% Recycled Filter Media — Recyclable at End of Life</div><div class="font-size:13px; color:var(--text); line-height:1.5;">Standard disposable filters go straight to landfill every 1–3 months. Blade Air's longer-life media is made from recycled material and is recyclable — dramatically reducing filtration waste across your portfolio.</div></div>
+          </div>
+          <div style="display:flex; gap:14px; align-items:flex-start; padding:16px 18px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+            <div style="font-size:22px; flex-shrink:0;">📉</div>
+            <div><div style="font-size:14px; font-weight:700; color:white; margin-bottom:3px;">40+ Tonnes of Waste Removed Per Building Annually</div><div style="font-size:13px; color:var(--text); line-height:1.5;">Blade Air's average building impact includes over 40 tonnes of filtration waste removed from the waste stream each year — a measurable, reportable sustainability outcome.</div></div>
           </div>
         </div>
-        <div class="career-item">
-          <div class="career-dot"></div>
-          <div class="career-detail">
-            <div class="career-co">Eaton Corporation</div>
-            <div class="career-role">Sales Engineer & Regional Marketing Manager</div>
+      </div>
+      <div class="fade-up">
+        <div style="background:var(--bg3); border:1px solid rgba(77,217,172,0.15); border-radius:12px; padding:36px; text-align:center;">
+          <div style="font-size:12px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--mint); margin-bottom:24px;">Average Annual Pro Filter Impact — Per Building</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px;">
+            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">240 kg</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">CO₂e avoided per filter</div>
+            </div>
+            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">40.4t</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Filtration waste removed</div>
+            </div>
+            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">63%</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Operational cost savings</div>
+            </div>
+            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">$13.7K</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Average energy savings/yr</div>
+            </div>
           </div>
-        </div>
-        <div class="career-item">
-          <div class="career-dot"></div>
-          <div class="career-detail">
-            <div class="career-co">Rockwell Automation</div>
-            <div class="career-role">Energy Management Specialist</div>
-          </div>
-        </div>
-        <div class="career-item">
-          <div class="career-dot"></div>
-          <div class="career-detail">
-            <div class="career-co">Trane</div>
-            <div class="career-role">ESCO Group Business Development Manager</div>
-          </div>
+          <div style="font-size:12px; color:var(--text-muted); line-height:1.6; padding:14px; background:var(--surface); border-radius:6px; border:1px solid var(--border);">Scope 1, 2 &amp; 3 emissions reductions — measurable and reportable for ESG, LEED, and sustainability reporting requirements.</div>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof" id="results">
+  <div class="section-inner">
+    <div class="section-eyebrow">Proven Results</div>
+    <div class="section-title">Real Properties.<br>Real Savings.</div>
+    <div class="section-desc">Every result below is from verified Blade Air installations — not projections. These are properties like yours.</div>
+    <div class="proof-grid">
+      <div class="proof-card featured">
+        <div class="proof-badge">Property Management</div>
+        <div class="proof-name">JLL</div>
+        <div class="proof-type">Global Property Management — Multiple Properties</div>
+        <div class="proof-stats">
+          <div class="proof-stat"><div class="val">✓</div><div class="desc">Verified dust reduction</div></div>
+          <div class="proof-stat"><div class="val">6 mo</div><div class="desc">Results confirmed</div></div>
+        </div>
+        <div class="proof-quote">"Since installing the filters six months ago, we have seen a significant reduction in airborne dust, with virtually no dust accumulation in the space during this period. The system is clearly performing very efficiently and has made a noticeable improvement to our indoor air quality."<div class="proof-attr">— JLL Property Management</div></div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-badge">Healthcare REIT</div>
+        <div class="proof-name">NorthWest Healthcare Properties REIT</div>
+        <div class="proof-type">Healthcare Real Estate Investment Trust</div>
+        <div class="proof-stats"><div class="proof-stat"><div class="val">16%</div><div class="desc">Airflow drop after 6 months — vs. 40–60% typical</div></div></div>
+        <div class="proof-quote">"Everything from the business case to sizing, delivery and results. After six months for the filters against the prevalent wind, only 16% drop in airflow — beyond expectations!"<div class="proof-attr">— NorthWest Healthcare Properties REIT</div></div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-badge">Commercial</div>
+        <div class="proof-name">Hedrick Associates</div>
+        <div class="proof-type">Commercial Property Management</div>
+        <div class="proof-stats"><div class="proof-stat"><div class="val">Multi</div><div class="desc">Buildings converted immediately after first install</div></div></div>
+        <div class="proof-quote">"Our clients love the Blade Air Pro Filters. They're seeing real savings and clear performance improvements. After the first installation, we immediately began planning conversions for additional AHUs across the campus."<div class="proof-attr">— Hedrick Associates</div></div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-badge">Industrial / Tech</div>
+        <div class="proof-name">Agilent Technologies</div>
+        <div class="proof-type">Life Sciences Manufacturing Facility</div>
+        <div class="proof-stats"><div class="proof-stat"><div class="val">92%</div><div class="desc">Storage space reduction</div></div></div>
+        <div class="proof-quote">"Product was easy to install and has performed very well to this date. Space savings is a huge plus for me as well. Not having 7 or 8 pallets of conventional filters sitting around on the dock is very nice."<div class="proof-attr">— Agilent Technologies</div></div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:36px;"><a href="https://www.bladeair.com/pro-filter" target="_blank" class="btn btn-ghost" style="font-size:14px; padding:12px 24px;">View Full Technical Specs & Case Studies →</a></div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR (embedded) -->
+<section style="background:var(--bg2);padding:80px 0 0;" id="getstarted">
+  <div class="section-inner" style="text-align:center;margin-bottom:40px;">
+    <div class="section-eyebrow">ROI Calculator</div>
+    <div class="section-title" style="margin:0 auto 16px;">See Your Numbers<br>Before You Commit.</div>
+    <div class="section-desc" style="margin:0 auto;">Enter what you know about your current filter program. Results update live across three views — Quick Summary, Property Manager, and Owner/Investor.</div>
+  </div>
+  <!-- PERSPECTIVE GUIDE -->
+<div class="perspective">
+  <div class="perspective-toggle" onclick="togglePerspective()">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span class="perspective-toggle-label">📐 Building Size Reference Guide</span>
+      <span class="perspective-toggle-sub">What to expect by property type — tap to expand</span>
+    </div>
+    <span class="perspective-toggle-arrow" id="perspArrow">▼</span>
+  </div>
+  <div class="perspective-body" id="perspBody">
+    <div class="perspective-inner">
+      <div class="btype-grid">
+        <div class="btype-card">
+          <div class="btype-badge badge-sm">Small</div>
+          <div class="btype-name">Small Commercial / Multifamily</div>
+          <div class="btype-row"><span class="btype-key">Sq Ft</span><span class="btype-val">20K–80K</span></div>
+          <div class="btype-row"><span class="btype-key">Units</span><span class="btype-val">50–200</span></div>
+          <div class="btype-row"><span class="btype-key">AHUs / RTUs</span><span class="btype-val">2–8</span></div>
+          <div class="btype-row"><span class="btype-key">Total filters</span><span class="btype-val">8–40</span></div>
+          <div class="btype-row"><span class="btype-key">Blade capex</span><span class="btype-val">$2K–$10K</span></div>
+          <div class="btype-row"><span class="btype-key">Annual savings</span><span class="btype-val">$1K–$5K</span></div>
+          <div class="btype-row"><span class="btype-key">Payback</span><span class="btype-val">24–36 mo</span></div>
+        </div>
+        <div class="btype-card">
+          <div class="btype-badge badge-md">Phoenix Sweet Spot</div>
+          <div class="btype-name">Mid-Size Multifamily / Office</div>
+          <div class="btype-row"><span class="btype-key">Sq Ft</span><span class="btype-val">80K–250K</span></div>
+          <div class="btype-row"><span class="btype-key">Units</span><span class="btype-val">200–500</span></div>
+          <div class="btype-row"><span class="btype-key">AHUs / RTUs</span><span class="btype-val">8–25</span></div>
+          <div class="btype-row"><span class="btype-key">Total filters</span><span class="btype-val">40–200</span></div>
+          <div class="btype-row"><span class="btype-key">Blade capex</span><span class="btype-val">$10K–$50K</span></div>
+          <div class="btype-row"><span class="btype-key">Annual savings</span><span class="btype-val">$5K–$25K</span></div>
+          <div class="btype-row"><span class="btype-key">Payback</span><span class="btype-val">18–28 mo</span></div>
+        </div>
+        <div class="btype-card">
+          <div class="btype-badge badge-lg">Large</div>
+          <div class="btype-name">Large Commercial / Portfolio</div>
+          <div class="btype-row"><span class="btype-key">Sq Ft</span><span class="btype-val">250K–600K</span></div>
+          <div class="btype-row"><span class="btype-key">Units / Tenants</span><span class="btype-val">500+</span></div>
+          <div class="btype-row"><span class="btype-key">AHUs / RTUs</span><span class="btype-val">25–75</span></div>
+          <div class="btype-row"><span class="btype-key">Total filters</span><span class="btype-val">150–500</span></div>
+          <div class="btype-row"><span class="btype-key">Blade capex</span><span class="btype-val">$37K–$125K</span></div>
+          <div class="btype-row"><span class="btype-key">Annual savings</span><span class="btype-val">$15K–$60K</span></div>
+          <div class="btype-row"><span class="btype-key">Payback</span><span class="btype-val">16–24 mo</span></div>
+        </div>
+        <div class="btype-card">
+          <div class="btype-badge badge-xl">Enterprise</div>
+          <div class="btype-name">Campus / Hospital / REIT (J&amp;J Scale)</div>
+          <div class="btype-row"><span class="btype-key">Sq Ft</span><span class="btype-val">600K+</span></div>
+          <div class="btype-row"><span class="btype-key">AHUs / RTUs</span><span class="btype-val">75–200+</span></div>
+          <div class="btype-row"><span class="btype-key">Total filters</span><span class="btype-val">400–2,000+</span></div>
+          <div class="btype-row"><span class="btype-key">Blade capex</span><span class="btype-val">$100K–$500K+</span></div>
+          <div class="btype-row"><span class="btype-key">Annual savings</span><span class="btype-val">$40K–$200K+</span></div>
+          <div class="btype-row"><span class="btype-key">Payback</span><span class="btype-val">15–22 mo</span></div>
+          <div class="btype-row"><span class="btype-key">J&amp;J verified</span><span class="btype-val">20 months</span></div>
+        </div>
+      </div>
+      <div class="perspective-questions">
+        <div class="perspective-questions-title">5 Questions That Size Any Building in Under 5 Minutes</div>
+        <ul class="perspective-questions-list">
+          <li>How many air handling units (AHUs) or rooftop units (RTUs) do you have?</li>
+          <li>How many filters per unit, and what size? (Read the dimensions off the filter frame)</li>
+          <li>What MERV rating are you currently running?</li>
+          <li>How often do you change them — and who does it?</li>
+          <li>What's your electricity cost per kWh? (Check the utility bill)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- INPUTS PANEL -->
+  <div class="inputs-panel">
+
+    <!-- FILTER SETUP -->
+    <div class="section-block">
+      <div class="section-block-header">
+        <div class="section-block-icon icon-filter">🔧</div>
+        <div><div class="section-block-title">Current Filter Setup</div><div class="section-block-desc">What you're running now</div></div>
+      </div>
+      <div class="input-grid three" style="margin-bottom:12px;">
+        <div class="field">
+          <label>Number of AHUs / RTUs</label>
+          <div class="field-hint">Air handlers or rooftop units</div>
+          <input class="inp" type="number" id="numAhu" value="15" min="1" oninput="calc()">
+        </div>
+        <div class="field">
+          <label>Filters Per AHU</label>
+          <div class="field-hint">Average across all units</div>
+          <input class="inp" type="number" id="filtersPerAhu" value="6" min="1" oninput="calc()">
+        </div>
+        <div class="field">
+          <label>Current MERV Rating</label>
+          <select class="sel" id="currentMerv" onchange="calc()">
+            <option value="4">MERV-4</option>
+            <option value="6">MERV-6</option>
+            <option value="8" selected>MERV-8 (most common)</option>
+            <option value="10">MERV-10</option>
+            <option value="11">MERV-11</option>
+            <option value="13">MERV-13</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-grid" style="margin-bottom:12px;">
+        <div class="field">
+          <label>Cost Per Filter ($)</label>
+          <div class="field-hint">Current purchase price each</div>
+          <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="costPerFilter" value="10" min="1" oninput="calc()"></div>
+        </div>
+        <div class="field">
+          <label>Change Frequency</label>
+          <select class="sel" id="changeFreq" onchange="calc()">
+            <option value="12">Monthly (12×/yr)</option>
+            <option value="6">Every 2 months (6×/yr)</option>
+            <option value="4" selected>Quarterly (4×/yr)</option>
+            <option value="3">Every 4 months (3×/yr)</option>
+            <option value="2">Every 6 months (2×/yr)</option>
+            <option value="1">Annually (1×/yr)</option>
+          </select>
+        </div>
+      </div>
+      <!-- Blade Air Pricing -->
+      <div style="padding:14px 16px;background:var(--sky-dim);border:1px solid rgba(110,198,230,0.2);border-radius:8px;">
+        <div style="font-size:11px;font-weight:700;color:var(--sky);margin-bottom:10px;letter-spacing:0.5px;">BLADE AIR INVESTMENT</div>
+        <div class="input-grid">
+          <div class="field">
+            <label>Frame Cost Per Filter ($)</label>
+            <div class="field-hint">One-time capex · J&amp;J = $250</div>
+            <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="bladeFrameCost" value="250" min="50" oninput="calc()"></div>
+          </div>
+          <div class="field">
+            <label>Annual Pad Cost Per Filter ($)</label>
+            <div class="field-hint">Replaces all current purchases · J&amp;J = $22</div>
+            <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="bladePadCost" value="22" min="5" oninput="calc()"></div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">Blade Air converts quarterly → annual changes (4× filter life). Annual pad cost replaces all current filter purchases.</div>
+      </div>
+    </div>
+
+    <!-- LABOR -->
+    <div class="section-block">
+      <div class="section-block-header">
+        <div class="section-block-icon icon-labor">👷</div>
+        <div><div class="section-block-title">Filter Change Labor</div><div class="section-block-desc">Present to owners/CFO — not facilities</div></div>
+        <div class="optional-tag">Optional</div>
+      </div>
+      <div class="input-grid" style="margin-bottom:12px;">
+        <div class="field">
+          <label>Labor Type</label>
+          <select class="sel" id="laborType" onchange="toggleLaborFields();calc()">
+            <option value="none">Skip / Not tracking</option>
+            <option value="inhouse">In-house staff</option>
+            <option value="contractor">Outside contractor</option>
+          </select>
+        </div>
+        <div class="field" id="laborRateField" style="display:none;">
+          <label>Hourly Rate ($/hr)</label>
+          <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="laborRate" value="28" min="0" oninput="calc()"></div>
+        </div>
+      </div>
+      <div class="input-grid" id="laborDetailFields" style="display:none;">
+        <div class="field">
+          <label>Hours Per AHU Change Event</label>
+          <div class="field-hint">Time to swap all filters in one AHU</div>
+          <div class="inp-suffix-wrap"><span class="inp-suffix">hrs</span><input class="inp" type="number" id="laborHours" value="0.5" min="0" step="0.25" oninput="calc()"></div>
+        </div>
+        <div class="field" id="laborTravelField" style="display:none;">
+          <label>Dispatch / Travel Cost Per Visit ($)</label>
+          <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="laborTravel" value="0" min="0" oninput="calc()"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENERGY -->
+    <div class="section-block">
+      <div class="section-block-header">
+        <div class="section-block-icon icon-energy">⚡</div>
+        <div><div class="section-block-title">HVAC Energy Usage</div><div class="section-block-desc">Biggest savings bucket — needs fan specs</div></div>
+        <div class="optional-tag">Optional</div>
+      </div>
+      <div class="toggle-row" onclick="toggleSection('energy')">
+        <div class="toggle" id="energyToggle"></div>
+        <div class="toggle-label">Include HVAC energy savings</div>
+      </div>
+      <div class="collapsible" id="energyFields" style="max-height:0;">
+        <div class="input-grid three" style="margin-bottom:12px;">
+          <div class="field">
+            <label>Fan HP Per AHU</label>
+            <div class="field-hint">From nameplate or mech drawings</div>
+            <div class="inp-suffix-wrap"><span class="inp-suffix">HP</span><input class="inp" type="number" id="fanHp" value="5" min="0.5" step="0.5" oninput="calc()"></div>
+          </div>
+          <div class="field">
+            <label>Daily Runtime Hours</label>
+            <div class="inp-suffix-wrap"><span class="inp-suffix">hrs</span><input class="inp" type="number" id="runtimeHours" value="16" min="1" max="24" oninput="calc()"></div>
+          </div>
+          <div class="field">
+            <label>Operating Days/Week</label>
+            <select class="sel" id="opDays" onchange="calc()">
+              <option value="5">5 days (M–F)</option>
+              <option value="6">6 days</option>
+              <option value="7" selected>7 days (always on)</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-grid">
+          <div class="field">
+            <label>Electricity Cost ($/kWh)</label>
+            <div class="field-hint">From utility bill · J&amp;J confirmed $0.135</div>
+            <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="kwhRate" value="0.10" min="0.01" step="0.01" oninput="calc()"></div>
+          </div>
+          <div class="field">
+            <label>Energy Saving %</label>
+            <div class="field-hint">J&amp;J verified 11.9% — Blade Air range 12–40%</div>
+            <select class="sel" id="energySavPct" onchange="calc()">
+              <option value="0.12" selected>12% — J&amp;J verified baseline</option>
+              <option value="0.15">15% — Conservative</option>
+              <option value="0.20">20% — Moderate</option>
+              <option value="0.25">25% — Mid-range</option>
+              <option value="0.30">30% — Above average</option>
+              <option value="0.40">40% — Best case</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORAGE -->
+    <div class="section-block">
+      <div class="section-block-header">
+        <div class="section-block-icon icon-storage">📦</div>
+        <div><div class="section-block-title">Storage &amp; Logistics</div><div class="section-block-desc">Space and delivery costs for filter inventory</div></div>
+        <div class="optional-tag">Optional</div>
+      </div>
+      <div class="toggle-row" onclick="toggleSection('storage')">
+        <div class="toggle" id="storageToggle"></div>
+        <div class="toggle-label">Include storage &amp; logistics savings</div>
+      </div>
+      <div class="collapsible" id="storageFields" style="max-height:0;">
+        <div class="input-grid" style="margin-bottom:12px;">
+          <div class="field">
+            <label>Storage Space Used (sq ft)</label>
+            <div class="inp-suffix-wrap"><span class="inp-suffix">sq ft</span><input class="inp" type="number" id="storageSqft" value="50" min="0" oninput="calc()"></div>
+          </div>
+          <div class="field">
+            <label>Rent / Space Cost ($/sq ft/yr)</label>
+            <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="rentPerSqft" value="18" min="0" oninput="calc()"></div>
+          </div>
+        </div>
+        <div class="input-grid">
+          <div class="field">
+            <label>Deliveries Per Year</label>
+            <input class="inp" type="number" id="deliveries" value="4" min="0" oninput="calc()">
+          </div>
+          <div class="field">
+            <label>Cost Per Delivery ($)</label>
+            <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="deliveryCost" value="45" min="0" oninput="calc()"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OWNER VIEW EXTRAS -->
+    <div class="section-block" id="ownerExtras" style="display:none;">
+      <div class="section-block-header">
+        <div class="section-block-icon icon-storage" style="background:var(--purple-dim);border-color:rgba(167,139,250,0.2);">📈</div>
+        <div><div class="section-block-title">Owner / Investor Inputs</div><div class="section-block-desc">Used in the Owner View calculations</div></div>
+      </div>
+      <div class="input-grid">
+        <div class="field">
+          <label>Cap Rate (%)</label>
+          <div class="field-hint">Conservative: 6.5% for Phoenix commercial</div>
+          <div class="inp-suffix-wrap"><span class="inp-suffix">%</span><input class="inp" type="number" id="capRate" value="6.5" min="3" max="12" step="0.5" oninput="calc()"></div>
+        </div>
+        <div class="field">
+          <label>Annual Energy Cost Escalation (%)</label>
+          <div class="field-hint">Historical avg ~5%/yr — savings grow with rates</div>
+          <div class="inp-suffix-wrap"><span class="inp-suffix">%</span><input class="inp" type="number" id="energyEscalation" value="5" min="0" max="15" step="0.5" oninput="calc()"></div>
+        </div>
+      </div>
+      <div class="input-grid" style="margin-top:12px;">
+        <div class="field">
+          <label>Discount Rate / WACC (%)</label>
+          <div class="field-hint">For NPV calculation — 8% is a common hurdle rate</div>
+          <div class="inp-suffix-wrap"><span class="inp-suffix">%</span><input class="inp" type="number" id="discountRate" value="8" min="3" max="20" step="0.5" oninput="calc()"></div>
+        </div>
+        <div class="field">
+          <label>Property Value ($)</label>
+          <div class="field-hint">Optional — shows improvement in cap rate math</div>
+          <div class="inp-prefix-wrap"><span class="inp-prefix">$</span><input class="inp" type="number" id="propertyValue" value="0" min="0" step="100000" oninput="calc()"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASSUMPTIONS NOTE -->
+    <div style="padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:12px;color:var(--text-muted);line-height:1.7;">
+      <strong style="color:var(--text-bright);">Model basis — J&amp;J Springhouse PA (verified Blade Air installation):</strong><br>
+      Filter life: <strong style="color:var(--text-bright);">4× (quarterly → annual)</strong> · Energy: <strong style="color:var(--text-bright);">12% reduction verified</strong> · Pricing: <strong style="color:var(--text-bright);">$250 frame / $22 pad</strong> · Payback: <strong style="color:var(--text-bright);">20 months actual</strong>
+    </div>
+  </div><!-- /inputs -->
+
+  <!-- RESULTS PANEL -->
+  <div class="results-panel">
+
+    <!-- VIEW TABS -->
+    <div class="view-tabs">
+      <button class="view-tab active" id="tabQuick" onclick="setView('quick')">⚡ Quick View</button>
+      <button class="view-tab" id="tabPm" onclick="setView('pm')">📋 PM View</button>
+      <button class="view-tab" id="tabOwner" onclick="setView('owner')">📈 Owner View</button>
+    </div>
+
+    <!-- QUICK VIEW -->
+    <div id="viewQuick">
+      <div class="total-card quick">
+        <div class="total-eyebrow eyebrow-quick">Total Annual Savings</div>
+        <div class="total-number" id="qTotalDisplay">$0</div>
+        <div class="total-sub" id="qTotalSub">Enter your filter details above</div>
+      </div>
+      <div class="breakdown">
+        <div class="bi off" id="qBiFilter"><div class="bi-icon">🔧</div><div class="bi-content"><div class="bi-label">Filter Cost Savings</div><div class="bi-sub" id="qBiFilterSub">4× filter life — quarterly to annual</div></div><div class="bi-amt zero" id="qBiFilterAmt">$0</div></div>
+        <div class="bi off" id="qBiLabor"><div class="bi-icon">👷</div><div class="bi-content"><div class="bi-label">Labor Savings</div><div class="bi-sub" id="qBiLaborSub">Fewer change events per year</div></div><div class="bi-amt zero" id="qBiLaborAmt">—</div></div>
+        <div class="bi off" id="qBiEnergy"><div class="bi-icon">⚡</div><div class="bi-content"><div class="bi-label">HVAC Energy Savings</div><div class="bi-sub" id="qBiEnergySub">Fan motor efficiency gain</div></div><div class="bi-amt zero" id="qBiEnergyAmt">—</div></div>
+        <div class="bi off" id="qBiStorage"><div class="bi-icon">📦</div><div class="bi-content"><div class="bi-label">Storage &amp; Logistics</div><div class="bi-sub">Space freed + fewer deliveries</div></div><div class="bi-amt zero" id="qBiStorageAmt">—</div></div>
+      </div>
+
+      <!-- CAPEX INVESTMENT CARD -->
+      <div style="background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(245,158,11,0.04));border:1px solid rgba(245,158,11,0.25);border-radius:10px;padding:16px 18px;margin-bottom:16px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:12px;">Blade Air Investment</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+          <div style="text-align:center;padding:12px 8px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.15);border-radius:7px;">
+            <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--amber);line-height:1;" id="invCapexDisplay">—</div>
+            <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">One-time capex</div>
+          </div>
+          <div style="text-align:center;padding:12px 8px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.15);border-radius:7px;">
+            <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--amber);line-height:1;" id="invMaintDisplay">—</div>
+            <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">Annual maintenance</div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:rgba(77,217,172,0.08);border:1px solid rgba(77,217,172,0.2);border-radius:7px;">
+          <div style="font-size:12px;font-weight:600;color:var(--text-bright);">Net annual savings after maintenance</div>
+          <div style="font-family:'DM Mono',monospace;font-size:15px;font-weight:600;color:var(--mint);" id="invNetDisplay">—</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:7px;">
+          <div style="font-size:12px;color:var(--text-muted);">Calculated payback period</div>
+          <div style="font-family:'DM Mono',monospace;font-size:15px;font-weight:600;color:var(--sky);" id="invPaybackDisplay">—</div>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-row"><span class="metric-key">One-time Blade Air capex</span><span class="metric-val" id="qCapex">—</span></div>
+        <div class="metric-row"><span class="metric-key">Annual Blade Air maintenance</span><span class="metric-val" id="qMaint">—</span></div>
+        <div class="metric-row"><span class="metric-key">Net annual savings</span><span class="metric-val green" id="qNetSav">—</span></div>
+        <div class="metric-row"><span class="metric-key">Payback period</span><span class="metric-val highlight" id="qPayback">—</span></div>
+      </div>
+      <div class="projection">
+        <div class="proj-title">Cumulative Net Savings (after capex)</div>
+        <div class="bar-row"><div class="bar-yr">Yr 1</div><div class="bar-track"><div class="bar-fill" id="qBar1" style="width:0%"></div></div><div class="bar-val" id="qBarv1">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 2</div><div class="bar-track"><div class="bar-fill" id="qBar2" style="width:0%"></div></div><div class="bar-val" id="qBarv2">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 3</div><div class="bar-track"><div class="bar-fill" id="qBar3" style="width:0%"></div></div><div class="bar-val" id="qBarv3">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 5</div><div class="bar-track"><div class="bar-fill" id="qBar5" style="width:0%"></div></div><div class="bar-val" id="qBarv5">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 10</div><div class="bar-track"><div class="bar-fill" id="qBar10" style="width:0%"></div></div><div class="bar-val" id="qBarv10">$0</div></div>
+      </div>
+      <a href="mailto:danv@galexcconservation.com?subject=Blade Air ROI Assessment" class="results-cta">Get My Custom Assessment →</a>
+      <div class="results-note">Dan VanderWal · GalexC Conservation Services<br><a href="tel:4258309902">425-830-9902</a> · <a href="mailto:danv@galexcconservation.com">danv@galexcconservation.com</a></div>
+    </div>
+
+    <!-- PM VIEW -->
+    <div id="viewPm" style="display:none;">
+      <div class="total-card pm">
+        <div class="total-eyebrow eyebrow-pm">Annual OpEx Reduction</div>
+        <div class="total-number" id="pmTotalDisplay">$0</div>
+        <div class="total-sub" id="pmTotalSub">Reduction in operating expense per year</div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-box sky-box"><div class="kpi-val" id="pmMonthly">$0</div><div class="kpi-lbl">Monthly OpEx savings</div></div>
+        <div class="kpi-box amber-box"><div class="kpi-val" id="pmPayback">—</div><div class="kpi-lbl">Payback period</div></div>
+        <div class="kpi-box mint-box"><div class="kpi-val" id="pmEventsElim">0</div><div class="kpi-lbl">Change events eliminated/yr</div></div>
+        <div class="kpi-box purple-box"><div class="kpi-val" id="pmFilterFreq">—</div><div class="kpi-lbl">New change schedule</div></div>
+      </div>
+      <div class="quality-bar">
+        <div class="quality-icon">🌬️</div>
+        <div class="quality-content">
+          <div class="quality-title">Air Quality Upgrade: <span id="pmMervFrom">MERV-8</span> → MERV-13 Performance</div>
+          <div class="quality-desc">Same filter slot. Better filtration — captures particles 40× smaller. MERV-13 performance at MERV-8 pressure drop. No HVAC modification required.</div>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-row"><span class="metric-key">Current annual filter budget</span><span class="metric-val" id="pmCurrentFilter">—</span></div>
+        <div class="metric-row"><span class="metric-key">Blade Air annual budget (pads)</span><span class="metric-val green" id="pmBladeFilter">—</span></div>
+        <div class="metric-row"><span class="metric-key">Filter budget reduction</span><span class="metric-val green" id="pmFilterSaving">—</span></div>
+        <div class="metric-row"><span class="metric-key">Labor cost reduction</span><span class="metric-val" id="pmLaborSaving">—</span></div>
+        <div class="metric-row"><span class="metric-key">Energy cost reduction</span><span class="metric-val" id="pmEnergySaving">—</span></div>
+        <div class="metric-row"><span class="metric-key">One-time investment required</span><span class="metric-val amber" id="pmCapex">—</span></div>
+      </div>
+      <div style="padding:12px 14px;background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.15);border-radius:8px;font-size:12px;color:var(--text-bright);line-height:1.7;margin-bottom:14px;">
+        <strong style="color:var(--amber);">Business Case Summary:</strong><br>
+        <span id="pmBusinessCase">Enter property data to generate summary.</span>
+      </div>
+      <a href="mailto:danv@galexcconservation.com?subject=Blade Air PM Assessment" class="results-cta">Request Full Property Report →</a>
+      <div class="results-note">Dan VanderWal · <a href="tel:4258309902">425-830-9902</a></div>
+    </div>
+
+    <!-- OWNER VIEW -->
+    <div id="viewOwner" style="display:none;">
+      <div class="total-card owner">
+        <div class="total-eyebrow eyebrow-owner">10-Year Net Value Created</div>
+        <div class="total-number" id="owTenYrNet">$0</div>
+        <div class="total-sub" id="owTenYrSub">Cumulative savings minus investment, with energy escalation</div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-box purple-box"><div class="kpi-val" id="owCashReturn">0%</div><div class="kpi-lbl">Annual cash-on-cash return</div></div>
+        <div class="kpi-box mint-box"><div class="kpi-val" id="owAssetValue">$0</div><div class="kpi-lbl">Asset value added (÷ cap rate)</div></div>
+        <div class="kpi-box amber-box"><div class="kpi-val" id="owPayback">—</div><div class="kpi-lbl">Simple payback</div></div>
+        <div class="kpi-box sky-box"><div class="kpi-val" id="owNpv">$0</div><div class="kpi-lbl">10-yr NPV at discount rate</div></div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-row"><span class="metric-key">Total investment (capex)</span><span class="metric-val amber" id="owCapex">—</span></div>
+        <div class="metric-row"><span class="metric-key">Year 1 annual savings</span><span class="metric-val" id="owYr1Sav">—</span></div>
+        <div class="metric-row"><span class="metric-key">Year 5 annual savings (escalated)</span><span class="metric-val green" id="owYr5Sav">—</span></div>
+        <div class="metric-row"><span class="metric-key">Year 10 annual savings (escalated)</span><span class="metric-val green" id="owYr10Sav">—</span></div>
+        <div class="metric-row"><span class="metric-key">Cap rate used</span><span class="metric-val" id="owCapRateDisplay">6.5%</span></div>
+        <div class="metric-row"><span class="metric-key">Asset value impact</span><span class="metric-val purple" id="owAssetImpact">—</span></div>
+      </div>
+      <div class="projection">
+        <div class="proj-title">10-Year Cumulative Value (with <span id="owEscLabel">5%</span>/yr energy escalation)</div>
+        <div class="bar-row"><div class="bar-yr">Yr 1</div><div class="bar-track"><div class="bar-fill" id="owBar1" style="width:0%"></div></div><div class="bar-val" id="owBarv1">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 2</div><div class="bar-track"><div class="bar-fill" id="owBar2" style="width:0%"></div></div><div class="bar-val" id="owBarv2">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 3</div><div class="bar-track"><div class="bar-fill" id="owBar3" style="width:0%"></div></div><div class="bar-val" id="owBarv3">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 5</div><div class="bar-track"><div class="bar-fill" id="owBar5" style="width:0%"></div></div><div class="bar-val" id="owBarv5">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 7</div><div class="bar-track"><div class="bar-fill" id="owBar7" style="width:0%"></div></div><div class="bar-val" id="owBarv7">$0</div></div>
+        <div class="bar-row"><div class="bar-yr">Yr 10</div><div class="bar-track"><div class="bar-fill" id="owBar10" style="width:0%"></div></div><div class="bar-val" id="owBarv10">$0</div></div>
+      </div>
+      <div style="padding:11px 13px;background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.15);border-radius:8px;font-size:11px;color:var(--text-muted);line-height:1.6;margin-bottom:14px;">
+        <strong style="color:var(--purple);">Why savings grow:</strong> The filter improvement is physical — the same % reduction on a rising energy cost generates larger dollar savings every year. The capex is fixed. The return compounds automatically as utility rates increase.
+      </div>
+      <a href="mailto:danv@galexcconservation.com?subject=Blade Air Owner ROI Discussion" class="results-cta">Schedule Owner Briefing →</a>
+      <div class="results-note">Dan VanderWal · <a href="tel:4258309902">425-830-9902</a></div>
+    </div>
+
+  </div><!-- /results -->
+</div><!-- /main -->
 </section>
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item">
-    <span class="trust-icon">🔒</span>
-    <span>90-Day Money-Back Guarantee</span>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">🏅</span>
-    <span>NSF/ANSI 61 &amp; 372 Certified</span>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">📜</span>
-    <span>3 Active US Patents</span>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">🛡️</span>
-    <span>10-Year Manufacturer Warranty</span>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">⚡</span>
-    <span>2-Hour Install — No Downtime</span>
-  </div>
-  <div class="trust-item">
-    <span class="trust-icon">📊</span>
-    <span>20,000+ Verified Installations</span>
+  <div class="trust-inner">
+    <div class="trust-label">Why Property Owners Choose Blade Air</div>
+    <div class="trust-grid">
+      <div class="trust-card"><div class="trust-icon-wrap">⚡</div><div><div class="trust-card-text">15–40% HVAC Energy Reduction</div><div class="trust-card-sub">Lower fan motor load from first install</div></div></div>
+      <div class="trust-card"><div class="trust-icon-wrap">🔄</div><div><div class="trust-card-text">50% Fewer Filter Change-Outs</div><div class="trust-card-sub">8.5× dust capacity vs. standard pleated</div></div></div>
+      <div class="trust-card"><div class="trust-icon-wrap">🎯</div><div><div class="trust-card-text">MERV-13 Performance, MERV-8 Pressure Drop</div><div class="trust-card-sub">Better air quality — no energy penalty</div></div></div>
+      <div class="trust-card"><div class="trust-icon-wrap">🌿</div><div><div class="trust-card-text">240 kg CO₂e Avoided Per Filter/Year</div><div class="trust-card-sub">Scope 1, 2 &amp; 3 emissions reductions — measurable</div></div></div>
+      <div class="trust-card"><div class="trust-icon-wrap">🛡️</div><div><div class="trust-card-text">2-Year Frame Warranty</div><div class="trust-card-sub">Backed by Blade Air Inc.</div></div></div>
+      <div class="trust-card"><div class="trust-icon-wrap">✅</div><div><div class="trust-card-text">CARB 867 / UL 2998 Certified</div><div class="trust-card-sub">Zero ozone — independently verified</div></div></div>
+    </div>
   </div>
 </div>
 
 <!-- CONTACT -->
-<section id="contact">
-  <div class="contact-grid">
-    <div class="contact-left">
-      <div class="section-label">// Free Water Cost Analysis</div>
-      <h2>Find Out What<br>You're Overpaying.<br>In 20 Minutes.</h2>
-      <p class="section-intro">
-        Send us a recent utility bill (or just the numbers). We'll run a free analysis, show you estimated savings across your properties, and give you a clear payback model — no obligation.
-      </p>
-
-      <div class="contact-promise">
-        <div class="promise-item">
-          <div class="promise-check">✓</div>
-          <div class="promise-text"><strong>Free analysis</strong> — no cost, no commitment</div>
-        </div>
-        <div class="promise-item">
-          <div class="promise-check">✓</div>
-          <div class="promise-text"><strong>Portfolio modeling</strong> for multi-property operators</div>
-        </div>
-        <div class="promise-item">
-          <div class="promise-check">✓</div>
-          <div class="promise-text"><strong>Clear payback timeline</strong> before you spend a dollar</div>
-        </div>
-        <div class="promise-item">
-          <div class="promise-check">✓</div>
-          <div class="promise-text"><strong>90-day guarantee</strong> — if the savings aren't there, neither is your cost</div>
-        </div>
-        <div class="promise-item">
-          <div class="promise-check">✓</div>
-          <div class="promise-text">You work directly with <strong>Doug d'Heilly</strong> — not a rep</div>
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <div class="section-eyebrow">Prefer to Talk?</div>
+        <div class="section-title">Skip the Form.<br>Call Dan Directly.</div>
+        <div class="section-desc" style="margin-bottom:28px;">If you'd rather just have a conversation, reach out anytime. 15 minutes is all it takes to see if Blade Air makes sense for your property.</div>
+        <div class="contact-promises">
+          <div class="promise"><div class="promise-check">✓</div><div class="promise-text"><strong>Free property assessment</strong> — HVAC unit count, filter type, change-out schedule, estimated savings</div></div>
+          <div class="promise"><div class="promise-check">✓</div><div class="promise-text"><strong>15-minute consultation</strong> — we'll walk through the numbers live on your property</div></div>
+          <div class="promise"><div class="promise-check">✓</div><div class="promise-text"><strong>No retrofitting required</strong> — direct replacement for your existing filter frames</div></div>
         </div>
       </div>
-    </div>
-
-    <div class="contact-form">
-      <div class="form-title">Request Your Free Analysis</div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">First Name</label>
-          <input class="form-input" type="text" placeholder="First">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Last Name</label>
-          <input class="form-input" type="text" placeholder="Last">
-        </div>
+      <div class="contact-card">
+        <div class="card-label">Your Phoenix Partner</div>
+        <div class="card-name">Dan VanderWal</div>
+        <div class="card-role">Partner, GalexC Conservation Services<br><span style="font-size:11px; color:var(--sky);">Founding Distribution Partner</span></div>
+        <a href="tel:4258309902" class="btn btn-light" style="text-decoration:none; margin-bottom:10px;">Call 425-830-9902</a>
+        <a href="mailto:danv@galexcconservation.com" class="btn btn-ghost" style="text-decoration:none;">Email danv@galexcconservation.com</a>
+        <div class="card-note">Based in Phoenix, AZ. Serving commercial and multifamily property owners across the Valley — with plans for Tucson and beyond.</div>
       </div>
-
-      <div class="form-group">
-        <label class="form-label">Company / Organization</label>
-        <input class="form-input" type="text" placeholder="Your company name">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Business Email</label>
-        <input class="form-input" type="email" placeholder="you@company.com">
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">Phone</label>
-          <input class="form-input" type="tel" placeholder="(___) ___-____">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Number of Properties</label>
-          <select class="form-select">
-            <option value="">Select...</option>
-            <option>1</option>
-            <option>2–5</option>
-            <option>6–15</option>
-            <option>16–50</option>
-            <option>50+</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Property Type</label>
-        <select class="form-select">
-          <option value="">Select your sector...</option>
-          <option>Hotel / Hospitality</option>
-          <option>Commercial / Office / Retail</option>
-          <option>Restaurant / Food Service</option>
-          <option>Multifamily Residential</option>
-          <option>Healthcare</option>
-          <option>Car Wash</option>
-          <option>Food &amp; Beverage Manufacturing</option>
-          <option>Other</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Approximate Monthly Water + Sewer Spend</label>
-        <select class="form-select">
-          <option value="">Select range...</option>
-          <option>Under $2,000/mo</option>
-          <option>$2,000 – $5,000/mo</option>
-          <option>$5,000 – $15,000/mo</option>
-          <option>$15,000 – $50,000/mo</option>
-          <option>Over $50,000/mo</option>
-        </select>
-      </div>
-
-      <button class="form-submit">Send My Free Analysis Request →</button>
-      <div class="form-note">We'll respond within 1 business day. No spam, ever.</div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div>
-    <div class="footer-logo">Galex<span>C</span> Corporate Conservation</div>
-    <div class="footer-tagline">Water Cost Reduction Specialists — Scottsdale, Arizona</div>
-  </div>
+<footer><div class="footer-inner">
+  <div><div class="footer-brand">Filter &amp; <span>Forget</span></div><div class="footer-sub">Founding Distribution Partner: GalexC Conservation Services — Phoenix, AZ</div></div>
   <ul class="footer-links">
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#markets">Markets</a></li>
+    <li><a href="#compare">Comparison</a></li>
     <li><a href="#results">Results</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="#getstarted">Get Started</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="https://galexcconservation.com" target="_blank">Our Founding Partner</a></li>
+    <li><a href="https://cutmywaterbill.com" target="_blank">Cut My Water Bill</a></li>
   </ul>
   <div class="footer-contact">
-    <div class="footer-name">Dan VanderWal</div>
-    <div class="footer-phone">425-830-9902</div>
-    <div class="footer-email">[danvwal@GalexCconsulting.com</div>
+    <div class="footer-phone"><a href="tel:4258309902" style="color:white;text-decoration:none;">425-830-9902</a></div>
+    <div class="footer-email"><a href="mailto:danv@galexcconservation.com">danv@galexcconservation.com</a></div>
   </div>
-</footer>
+</div></footer>
 
 <script>
-// Animate bars on scroll into view
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.animationPlayState = 'running';
-    }
-  });
-}, { threshold: 0.2 });
+window.addEventListener('scroll',()=>{document.querySelector('nav').style.background=window.scrollY>20?'rgba(8,12,16,0.95)':'rgba(8,12,16,0.85)';});
+const fo=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible');});},{threshold:0.15});
+document.querySelectorAll('.fade-up').forEach(el=>fo.observe(el));
 
-document.querySelectorAll('.stat-card, .market-card, .result-card, .how-step').forEach(el => {
-  observer.observe(el);
-});
+function handleFilterSubmit(e){
+  e.preventDefault();
+  const f=document.getElementById('ffirst').value.trim(),l=document.getElementById('flast').value.trim(),em=document.getElementById('femail').value.trim(),p=document.getElementById('fphone').value.trim();
+  if(!f||!l){alert('Please enter your name.');return false;}
+  if(!em){alert('Please enter your email.');return false;}
+  if(!p){alert('Please enter your phone.');return false;}
+  const form=document.getElementById('filterForm');
+  const formData=new FormData(form);
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(formData).toString()})
+    .then(()=>{document.getElementById('formStep1').style.display='none';document.getElementById('formStep2').style.display='block';document.getElementById('formStep2').scrollIntoView({behavior:'smooth',block:'center'});})
+    .catch((err)=>{console.error(err);alert('Something went wrong. Please email danv@galexcconservation.com directly.');});
+  return false;
+}
 
-// Smooth nav highlight
-window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section[id]');
-  const links = document.querySelectorAll('.nav-links a[href^="#"]');
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 100) current = s.id;
-  });
-  links.forEach(l => {
-    l.style.color = l.getAttribute('href') === '#' + current
-      ? 'var(--teal-light)' : '';
-  });
-});
+const ms=document.createElement('style');ms.textContent='.nav-links.show{display:flex!important;position:fixed;top:68px;left:0;right:0;background:rgba(8,12,16,0.98);flex-direction:column;padding:20px 5vw;gap:16px;border-bottom:1px solid var(--border);}';document.head.appendChild(ms);
 
-// Form submit (placeholder)
-document.querySelector('.form-submit').addEventListener('click', () => {
-  const btn = document.querySelector('.form-submit');
-  btn.textContent = '✓ Request Sent — We\'ll Be In Touch Shortly';
-  btn.style.background = 'var(--green, #2ECC71)';
-});
+
+/* ── EMBEDDED ROI CALCULATOR JS ── */
+let energyOn=false, storageOn=false, currentView='quick';
+
+function togglePerspective(){
+  const b=document.getElementById('perspBody');
+  const a=document.getElementById('perspArrow');
+  const open=b.classList.toggle('open');
+  a.classList.toggle('open',open);
+}
+
+function setView(v){
+  currentView=v;
+  ['quick','pm','owner'].forEach(x=>{
+    document.getElementById('view'+x.charAt(0).toUpperCase()+x.slice(1)).style.display=x===v?'block':'none';
+    document.getElementById('tab'+x.charAt(0).toUpperCase()+x.slice(1)).classList.toggle('active',x===v);
+  });
+  document.getElementById('ownerExtras').style.display=v==='owner'?'block':'none';
+  calc();
+}
+
+function toggleSection(sec){
+  if(sec==='energy'){
+    energyOn=!energyOn;
+    document.getElementById('energyToggle').classList.toggle('on',energyOn);
+    document.getElementById('energyFields').style.maxHeight=energyOn?'400px':'0';
+  } else {
+    storageOn=!storageOn;
+    document.getElementById('storageToggle').classList.toggle('on',storageOn);
+    document.getElementById('storageFields').style.maxHeight=storageOn?'300px':'0';
+  }
+  calc();
+}
+
+function toggleLaborFields(){
+  const t=document.getElementById('laborType').value;
+  document.getElementById('laborRateField').style.display=t==='none'?'none':'flex';
+  document.getElementById('laborDetailFields').style.display=t==='none'?'none':'grid';
+  document.getElementById('laborTravelField').style.display=t==='contractor'?'flex':'none';
+  calc();
+}
+
+function fmt(n){
+  if(n===0)return'$0';
+  const a=Math.abs(n);
+  const s=n<0?'-':'';
+  if(a>=1000000)return s+'$'+(a/1000000).toFixed(1)+'M';
+  if(a>=10000)return s+'$'+Math.round(a/1000)+'K';
+  return s+'$'+Math.round(a).toLocaleString('en-US');
+}
+function fmtFull(n){
+  const s=n<0?'-':'';
+  return s+'$'+Math.abs(Math.round(n)).toLocaleString('en-US');
+}
+function fmtPct(n){return(n*100).toFixed(1)+'%';}
+
+function getBuckets(){
+  const numAhu=parseFloat(document.getElementById('numAhu').value)||0;
+  const filtersPerAhu=parseFloat(document.getElementById('filtersPerAhu').value)||1;
+  const costPerFilter=parseFloat(document.getElementById('costPerFilter').value)||0;
+  const changesPerYr=parseFloat(document.getElementById('changeFreq').value)||4;
+  const bladeFrame=parseFloat(document.getElementById('bladeFrameCost').value)||250;
+  const bladePad=parseFloat(document.getElementById('bladePadCost').value)||22;
+  const laborType=document.getElementById('laborType').value;
+  const laborRate=parseFloat(document.getElementById('laborRate').value)||0;
+  const laborHours=parseFloat(document.getElementById('laborHours').value)||0;
+  const laborTravel=parseFloat(document.getElementById('laborTravel').value)||0;
+  const totalFilters=numAhu*filtersPerAhu;
+  const capex=totalFilters*bladeFrame;
+  const annualMaint=totalFilters*bladePad;
+  const savedChanges=Math.max(0,changesPerYr-1);
+  // Filter
+  const annualFilterSpend=totalFilters*costPerFilter*changesPerYr;
+  const filterSavings=annualFilterSpend-annualMaint;
+  // Labor
+  let annualLaborSpend=0, laborSavings=0;
+  if(laborType!=='none'){
+    annualLaborSpend=laborType==='inhouse'
+      ? laborRate*laborHours*numAhu*changesPerYr
+      : (laborRate*laborHours+laborTravel)*numAhu*changesPerYr;
+    laborSavings=changesPerYr>0?annualLaborSpend*(savedChanges/changesPerYr):0;
+  }
+  // Energy
+  let annualFanEnergy=0, energySavings=0;
+  if(energyOn){
+    const fanHp=parseFloat(document.getElementById('fanHp').value)||3;
+    const runtimeHrs=parseFloat(document.getElementById('runtimeHours').value)||12;
+    const opDays=parseFloat(document.getElementById('opDays').value)||7;
+    const kwhRate=parseFloat(document.getElementById('kwhRate').value)||0.10;
+    const ePct=parseFloat(document.getElementById('energySavPct').value)||0.12;
+    const fanKw=(fanHp*0.746)/0.90;
+    annualFanEnergy=fanKw*runtimeHrs*opDays*52*numAhu*kwhRate;
+    energySavings=annualFanEnergy*ePct;
+  }
+  // Storage
+  let storageSavings=0;
+  if(storageOn){
+    const sqft=parseFloat(document.getElementById('storageSqft').value)||0;
+    const rent=parseFloat(document.getElementById('rentPerSqft').value)||0;
+    const del=parseFloat(document.getElementById('deliveries').value)||0;
+    const delCost=parseFloat(document.getElementById('deliveryCost').value)||0;
+    storageSavings=(sqft*rent*0.75)+(changesPerYr>0?(del*delCost)*(savedChanges/changesPerYr):0);
+  }
+  const netAnnual=filterSavings+laborSavings+energySavings+storageSavings;
+  const paybackMo=netAnnual>0&&capex>0?(capex/netAnnual)*12:0;
+  return{numAhu,filtersPerAhu,totalFilters,capex,annualMaint,savedChanges,changesPerYr,
+    annualFilterSpend,filterSavings,annualLaborSpend,laborSavings,annualFanEnergy,energySavings,
+    storageSavings,netAnnual,paybackMo,laborType,bladeFrame,bladePad,costPerFilter};
+}
+
+function paybackStr(mo){
+  if(!mo||mo<=0)return'—';
+  const y=Math.floor(mo/12), m=Math.round(mo%12);
+  return y>0?(y+' yr'+(m>0?' '+m+' mo':'')):Math.round(mo)+' months';
+}
+
+function setBar(id,val,maxVal){
+  const pct=maxVal>0?Math.max(0,(val/maxVal)*100):0;
+  const el=document.getElementById(id);
+  el.style.width=pct+'%';
+  el.className='bar-fill '+(val<0?'negative':'positive');
+}
+
+function calc(){
+  const b=getBuckets();
+  const currentMerv=document.getElementById('currentMerv').value;
+
+  // ── QUICK VIEW ──
+  document.getElementById('qTotalDisplay').textContent=fmtFull(b.netAnnual);
+  document.getElementById('qTotalSub').textContent=b.netAnnual>0
+    ?`per year · $${Math.round(b.netAnnual/12).toLocaleString()} monthly`
+    :'Enter filter details above';
+
+  function setBi(id,amtId,subId,val,sub,on){
+    document.getElementById(id).className='bi '+(on&&val>0?'on':'off');
+    document.getElementById(amtId).textContent=on?(val>0?fmtFull(val):'$0'):'—';
+    document.getElementById(amtId).className='bi-amt'+(on&&val>0?'':' zero');
+    if(subId)document.getElementById(subId).textContent=sub;
+  }
+  setBi('qBiFilter','qBiFilterAmt','qBiFilterSub',b.filterSavings,
+    b.annualFilterSpend>0?`Current: ${fmtFull(b.annualFilterSpend)}/yr → Blade: ${fmtFull(b.annualMaint)}/yr`:'4× filter life',true);
+  setBi('qBiLabor','qBiLaborAmt','qBiLaborSub',b.laborSavings,
+    b.laborType!=='none'?`${b.savedChanges} of ${b.changesPerYr} events eliminated/yr`:'Enable labor above',b.laborType!=='none');
+  setBi('qBiEnergy','qBiEnergyAmt','qBiEnergySub',b.energySavings,
+    energyOn?`Fan energy: ${fmtFull(b.annualFanEnergy)}/yr · ${Math.round(parseFloat(document.getElementById('energySavPct').value)*100)}% reduction`:'Enable energy above',energyOn);
+  setBi('qBiStorage','qBiStorageAmt',null,b.storageSavings,'',storageOn);
+
+  document.getElementById('qCapex').textContent=b.capex>0?fmtFull(b.capex)+' one-time':'—';
+  document.getElementById('qMaint').textContent=b.annualMaint>0?fmtFull(b.annualMaint)+'/yr':'—';
+  document.getElementById('qNetSav').textContent=b.netAnnual>0?fmtFull(b.netAnnual)+'/yr':'—';
+  document.getElementById('qPayback').textContent=paybackStr(b.paybackMo);
+
+  // Investment card
+  document.getElementById('invCapexDisplay').textContent=b.capex>0?fmtFull(b.capex):'—';
+  document.getElementById('invMaintDisplay').textContent=b.annualMaint>0?fmtFull(b.annualMaint)+'/yr':'—';
+  document.getElementById('invNetDisplay').textContent=b.netAnnual>0?fmtFull(b.netAnnual)+'/yr':'—';
+  document.getElementById('invPaybackDisplay').textContent=paybackStr(b.paybackMo)||'—';
+
+  // Quick 5-yr bars
+  const qProj={1:b.netAnnual-b.capex,2:b.netAnnual*2-b.capex,3:b.netAnnual*3-b.capex,5:b.netAnnual*5-b.capex,10:b.netAnnual*10-b.capex};
+  const qMax=Math.max(...Object.values(qProj),1);
+  [1,2,3,5,10].forEach(y=>{
+    setBar('qBar'+y,qProj[y],qMax);
+    document.getElementById('qBarv'+y).textContent=fmt(qProj[y]);
+  });
+
+  // ── PM VIEW ──
+  document.getElementById('pmTotalDisplay').textContent=fmtFull(b.netAnnual);
+  document.getElementById('pmTotalSub').textContent=b.netAnnual>0?`$${Math.round(b.netAnnual/12).toLocaleString()}/month reduction in operating expense`:'Enter property data above';
+  document.getElementById('pmMonthly').textContent=fmt(b.netAnnual/12);
+  document.getElementById('pmPayback').textContent=paybackStr(b.paybackMo);
+  document.getElementById('pmEventsElim').textContent=b.savedChanges+' events';
+  document.getElementById('pmFilterFreq').textContent=b.changesPerYr>1?'Annual (1×/yr)':'Already annual';
+  document.getElementById('pmMervFrom').textContent='MERV-'+currentMerv;
+  document.getElementById('pmCurrentFilter').textContent=b.annualFilterSpend>0?fmtFull(b.annualFilterSpend)+'/yr':'—';
+  document.getElementById('pmBladeFilter').textContent=b.annualMaint>0?fmtFull(b.annualMaint)+'/yr':'—';
+  document.getElementById('pmFilterSaving').textContent=b.filterSavings>0?fmtFull(b.filterSavings)+'/yr':'—';
+  document.getElementById('pmLaborSaving').textContent=b.laborSavings>0?fmtFull(b.laborSavings)+'/yr ('+b.savedChanges+' events eliminated)':'Not included';
+  document.getElementById('pmEnergySaving').textContent=b.energySavings>0?fmtFull(b.energySavings)+'/yr ('+Math.round(parseFloat(document.getElementById('energySavPct').value||0.12)*100)+'% HVAC reduction)':'Not included';
+  document.getElementById('pmCapex').textContent=b.capex>0?fmtFull(b.capex)+' one-time ('+paybackStr(b.paybackMo)+' payback)':'—';
+
+  // PM Business Case text
+  if(b.netAnnual>0&&b.capex>0){
+    document.getElementById('pmBusinessCase').innerHTML=
+      `Replacing current ${b.changesPerYr}×/yr MERV-${currentMerv} filters with Blade Air Pro across ${b.numAhu} AHUs requires a <strong style="color:var(--amber)">${fmtFull(b.capex)} one-time investment</strong> and reduces annual filter spend from <strong>${fmtFull(b.annualFilterSpend)}</strong> to <strong>${fmtFull(b.annualMaint)}</strong>. Filter change events drop from ${b.changesPerYr}×/yr to once annually. Total verified annual savings: <strong style="color:var(--mint)">${fmtFull(b.netAnnual)}</strong>. Payback: <strong>${paybackStr(b.paybackMo)}</strong>. Air quality upgrades from MERV-${currentMerv} to MERV-13 performance at no energy penalty.`;
+  } else {
+    document.getElementById('pmBusinessCase').textContent='Enter property data to generate summary.';
+  }
+
+  // ── OWNER VIEW ──
+  const escRate=(parseFloat(document.getElementById('energyEscalation').value)||5)/100;
+  const capRatePct=(parseFloat(document.getElementById('capRate').value)||6.5)/100;
+  const discRate=(parseFloat(document.getElementById('discountRate').value)||8)/100;
+  const propVal=parseFloat(document.getElementById('propertyValue').value)||0;
+
+  // Build annual savings with energy escalation
+  // Non-energy savings are fixed; energy savings grow with escalation
+  const fixedSav=b.filterSavings+b.laborSavings+b.storageSavings;
+
+  function annualSavYear(yr){
+    return fixedSav+(b.energySavings*Math.pow(1+escRate,yr-1));
+  }
+
+  // 10-yr cumulative & NPV
+  let cumulative=-b.capex, npv=-b.capex;
+  const owProj={};
+  for(let yr=1;yr<=10;yr++){
+    const sav=annualSavYear(yr);
+    cumulative+=sav;
+    npv+=sav/Math.pow(1+discRate,yr);
+    owProj[yr]=cumulative;
+  }
+
+  const yr5Sav=annualSavYear(5);
+  const yr10Sav=annualSavYear(10);
+  const assetValueAdded=b.netAnnual>0?b.netAnnual/capRatePct:0;
+  const cashReturn=b.capex>0?b.netAnnual/b.capex:0;
+
+  document.getElementById('owTenYrNet').textContent=fmtFull(owProj[10]);
+  document.getElementById('owTenYrSub').textContent=b.netAnnual>0
+    ?`After ${fmtFull(b.capex)} investment · ${(escRate*100).toFixed(0)}% annual energy escalation`
+    :'Enter filter details above';
+
+  document.getElementById('owCashReturn').textContent=b.capex>0?Math.round(cashReturn*100)+'%':'—';
+  document.getElementById('owAssetValue').textContent=assetValueAdded>0?fmt(assetValueAdded):'—';
+  document.getElementById('owPayback').textContent=paybackStr(b.paybackMo);
+  document.getElementById('owNpv').textContent=npv>0?fmt(npv):'—';
+  document.getElementById('owCapex').textContent=b.capex>0?fmtFull(b.capex)+' one-time':'—';
+  document.getElementById('owYr1Sav').textContent=b.netAnnual>0?fmtFull(b.netAnnual)+'/yr':'—';
+  document.getElementById('owYr5Sav').textContent=yr5Sav>0?fmtFull(yr5Sav)+'/yr':'—';
+  document.getElementById('owYr10Sav').textContent=yr10Sav>0?fmtFull(yr10Sav)+'/yr':'—';
+  document.getElementById('owCapRateDisplay').textContent=(capRatePct*100).toFixed(1)+'%';
+  document.getElementById('owEscLabel').textContent=(escRate*100).toFixed(0)+'%';
+
+  if(assetValueAdded>0){
+    const txt=propVal>0
+      ?`Annual savings of ${fmtFull(b.netAnnual)} ÷ ${(capRatePct*100).toFixed(1)}% cap rate = ${fmtFull(assetValueAdded)} added to asset value. Current property value would rise from ${fmtFull(propVal)} to ${fmtFull(propVal+assetValueAdded)}.`
+      :`Annual savings of ${fmtFull(b.netAnnual)} ÷ ${(capRatePct*100).toFixed(1)}% cap rate = ${fmtFull(assetValueAdded)} added to asset value at this cap rate.`;
+    document.getElementById('owAssetImpact').textContent=txt;
+  } else {
+    document.getElementById('owAssetImpact').textContent='Enter savings data to calculate.';
+  }
+
+  // Owner 10-yr bars
+  const owMax=Math.max(...Object.values(owProj).map(Math.abs),1);
+  [1,2,3,5,7,10].forEach(y=>{
+    setBar('owBar'+y,owProj[y],owMax);
+    document.getElementById('owBarv'+y).textContent=fmt(owProj[y]);
+  });
+}
+
+// Init
+calc();
+
 </script>
 </body>
 </html>
