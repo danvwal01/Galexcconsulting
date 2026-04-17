@@ -87,11 +87,17 @@
 
   * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior: smooth; }
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -200,13 +206,13 @@
 
   /* ── COMPARISON TABLE ── */
   .compare { background:var(--bg); }
-  .compare-table { margin-top:48px; border:1px solid var(--border); border-radius:12px; overflow:hidden; }
-  .compare-header { display:grid; grid-template-columns:2fr 1fr 1fr; background:var(--bg3); border-bottom:1px solid var(--border); }
-  .compare-header-cell { padding:18px 24px; font-size:13px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; }
+  .compare-table { margin-top:48px; border:1px solid var(--border); border-radius:12px; overflow:hidden; display:grid; grid-template-columns:2fr 1fr 1fr; }
+  .compare-header, .compare-row { display:contents; }
+  .compare-header-cell { padding:18px 24px; font-size:13px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; background:var(--bg3); border-bottom:1px solid var(--border); }
   .compare-header-cell.highlight { color:var(--sky); background:rgba(110,198,230,0.06); border-left:1px solid rgba(110,198,230,0.15); }
-  .compare-row { display:grid; grid-template-columns:2fr 1fr 1fr; border-bottom:1px solid var(--border); }
-  .compare-row:last-child { border-bottom:none; }
-  .compare-row:nth-child(even) { background:rgba(255,255,255,0.02); }
+  .compare-row > .compare-cell { border-bottom:1px solid var(--border); }
+  .compare-row:last-child > .compare-cell { border-bottom:none; }
+  .compare-row:nth-child(even) > .compare-cell:not(.good) { background:rgba(255,255,255,0.02); }
   .compare-cell { padding:16px 24px; font-size:14px; color:var(--text); display:flex; align-items:center; gap:8px; }
   .compare-cell.label { font-weight:600; color:var(--text-bright); }
   .compare-cell.bad { color:#EF4444; }
@@ -326,7 +332,7 @@
     .how-grid { grid-template-columns:1fr; }
     .proof-grid { grid-template-columns:1fr; }
     .proof-card.featured { grid-row:span 1; }
-    .compare-header, .compare-row { grid-template-columns:1fr 1fr 1fr; }
+    .compare-table { grid-template-columns:1fr 1fr 1fr; }
     .compare-cell.label { font-size:12px; }
     .stat-grid { grid-template-columns:1fr 1fr; }
     .form-row { grid-template-columns:1fr; }
@@ -522,6 +528,199 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
   .btype-grid{grid-template-columns:1fr;}
   .kpi-grid{grid-template-columns:1fr 1fr;}
 }
+
+/* ── MOBILE PHONE FIXES (480px and under) ── */
+@media(max-width:480px){
+  /* Prevent horizontal scroll — target specific offenders only */
+  img, video, iframe, table { max-width:100%; }
+  section, .section-inner, .hero, nav { overflow-x:hidden; max-width:100%; }
+
+  /* Nav */
+  nav { padding:0 16px; }
+
+  /* Hero */
+  .hero-content { padding:100px 16px 80px; }
+  .hero-headline { font-size:clamp(28px,8vw,42px); }
+  .hero-sub { font-size:15px; }
+  .hero-stat .num { font-size:28px; }
+  .hero-stat .label { font-size:11px; }
+  .hero-stats { gap:8px; }
+  .hero-stat { flex:1 1 40%; padding:12px 8px; }
+
+  /* Section inner padding */
+  .section-inner { padding:0 16px; }
+  section { padding-left:0 !important; padding-right:0 !important; }
+  section > .section-inner { padding:0 16px; }
+
+  /* Section titles */
+  .section-title { font-size:clamp(24px,7vw,36px) !important; }
+  .section-desc { font-size:15px !important; }
+  .section-eyebrow { font-size:10px; }
+
+  /* How it works */
+  .how-step { flex-direction:column; gap:8px; }
+  .step-num { font-size:11px; }
+
+  /* MERV 3-col comparison — KEEP 3 cols on mobile, shrink content to fit */
+  .merv-grid {
+    grid-template-columns:1fr 1fr 1fr !important;
+    gap:6px !important;
+  }
+  .merv-grid > div {
+    padding:10px 6px !important;
+    box-sizing:border-box;
+  }
+  /* Eyebrow labels (Standard / Upgraded / The Breakthrough) */
+  .merv-grid > div > div:nth-child(2) {
+    font-size:8px !important;
+    letter-spacing:0.5px !important;
+    margin-bottom:6px !important;
+  }
+  /* The headline — MERV-8 / MERV-13 / Blade Air Pro Filter */
+  .merv-grid > div > div:nth-child(3) {
+    font-size:14px !important;
+    line-height:1.1 !important;
+    margin-bottom:4px !important;
+  }
+  /* Subtitle (Most commercial buildings, etc.) */
+  .merv-grid > div > div:nth-child(4) {
+    font-size:9px !important;
+    margin-bottom:10px !important;
+  }
+  /* "Captures down to..." line */
+  .merv-grid > div > div:nth-child(5) {
+    font-size:10px !important;
+  }
+  /* Checklist items */
+  .merv-grid > div > div:nth-child(7) > div {
+    font-size:10px !important;
+    line-height:1.3 !important;
+  }
+  /* Pressure drop footer */
+  .merv-grid > div > div:nth-child(8) {
+    font-size:9px !important;
+    line-height:1.3 !important;
+    padding:6px !important;
+    margin-top:10px !important;
+  }
+  /* Insight bar under MERV */
+  [id="merv"] > .section-inner > div[style*="display:flex"] {
+    flex-direction:column;
+    gap:10px;
+  }
+
+  /* Green/carbon 2-col inline grid — stack on mobile */
+  .green-content-grid {
+    grid-template-columns:1fr !important;
+    gap:24px !important;
+  }
+
+  /* Compare table — scroll wrapper handles it. Just reduce font. */
+  .compare-header-cell { padding:10px 10px; font-size:10px; }
+  .compare-cell { padding:10px 10px; font-size:11px; }
+  .compare-cell.label { font-size:11px; }
+
+  /* Proof stats */
+  .stat-grid { grid-template-columns:1fr 1fr; }
+  .stat-val { font-size:28px; }
+
+  /* Trust bar */
+  .trust-grid { grid-template-columns:1fr 1fr; gap:8px; }
+
+  /* ROI Calculator section padding */
+  .inputs-panel { padding:20px 16px 40px; }
+  .results-panel { padding:20px 16px 40px; }
+
+  /* View tabs */
+  .view-tabs { gap:2px; padding:3px; }
+  .view-tab { font-size:10px; padding:7px 4px; letter-spacing:0; }
+
+  /* Total card */
+  .total-card { padding:18px 14px; }
+  .total-number { font-size:32px !important; }
+
+  /* KPI grid — 2 col on phone is fine */
+  .kpi-grid { grid-template-columns:1fr 1fr; gap:8px; }
+  .kpi-val { font-size:20px; }
+  .kpi-lbl { font-size:9px; }
+
+  /* Breakdown items */
+  .bi { padding:10px 10px; }
+  .bi-label { font-size:11px; }
+  .bi-sub { font-size:9px; }
+  .bi-amt { font-size:12px; }
+
+  /* Metric cards */
+  .metric-card { padding:12px; }
+  .metric-key { font-size:11px; }
+  .metric-val { font-size:12px; }
+
+  /* Projection bars */
+  .bar-yr { font-size:9px; width:20px; }
+  .bar-val { font-size:9px; width:52px; }
+
+  /* Building reference guide */
+  .btype-grid { grid-template-columns:1fr; }
+  .btype-name { font-size:13px; }
+  .btype-key, .btype-val { font-size:11px; }
+  .perspective-toggle-label { font-size:11px; }
+  .perspective-toggle-sub { display:none; }
+  .perspective-questions-list { grid-template-columns:1fr; }
+  .perspective-questions-list li { font-size:12px; }
+
+  /* Input fields */
+  .inp, .sel { font-size:16px !important; } /* prevent iOS zoom on focus */
+  .field label { font-size:10px; }
+  .field-hint { font-size:10px; }
+
+  /* Section blocks */
+  .section-block-header { gap:8px; }
+  .section-block-title { font-size:13px; }
+  .optional-tag { display:none; }
+
+  /* Investment card in Quick View */
+  [id="invCapexDisplay"], [id="invMaintDisplay"] { font-size:18px !important; }
+  [id="invNetDisplay"], [id="invPaybackDisplay"] { font-size:13px; }
+
+  /* CTA buttons */
+  .results-cta { font-size:13px; padding:12px; }
+  .results-note { font-size:10px; }
+
+  /* Contact section */
+  .contact-grid { grid-template-columns:1fr; }
+  .form-row { grid-template-columns:1fr; }
+  .getstarted-inner { padding:24px 16px; }
+
+  /* Footer */
+  .footer-inner { padding:0 16px; }
+  .footer-nav { flex-wrap:wrap; gap:12px; }
+
+  /* Environmental Impact section */
+  .green-section { padding:60px 16px !important; }
+  .green-content-grid { grid-template-columns:1fr !important; gap:32px !important; }
+  .env-stats-grid { grid-template-columns:1fr 1fr !important; gap:10px !important; }
+  .env-stats-grid > div { padding:16px 10px !important; }
+  .env-stats-grid > div > div:first-child { font-size:26px !important; }
+
+  /* Green section bullet cards */
+  .green-content-grid > div:first-child > div > div[style*="display:flex"][style*="gap:14px"] {
+    padding:12px 14px !important;
+  }
+  .green-content-grid > div:first-child > div > div > div:last-child > div:first-child {
+    font-size:13px !important;
+  }
+  .green-content-grid > div:first-child > div > div > div:last-child > div:last-child {
+    font-size:12px !important;
+  }
+}
+
+/* ── VERY SMALL PHONES (360px) ── */
+@media(max-width:375px){
+  .view-tab { font-size:9px; padding:6px 3px; }
+  .total-number { font-size:28px !important; }
+  .kpi-val { font-size:18px; }
+  .hero-headline { font-size:26px; }
+}
 </style>
 </head>
 <body>
@@ -629,17 +828,17 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
 </section>
 
 <!-- MERV CHART -->
-<section style="background:var(--bg); padding:80px 5vw 40px; border-top:1px solid var(--border);" id="merv">
+<section style="background:var(--bg); padding:clamp(40px,6vw,80px) 5vw 40px; border-top:1px solid var(--border);" id="merv">
   <div class="section-inner">
     <div class="section-eyebrow">Understanding Air Filtration</div>
     <div class="section-title">What Is a MERV Rating<br>and Why Does It Matter?</div>
     <div class="section-desc" style="margin-bottom:40px;">MERV stands for Minimum Efficiency Reporting Value — it measures how small a particle your filter captures. Higher MERV = finer filtration. The catch: standard high-MERV filters restrict airflow, forcing your HVAC to work harder.</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:32px;" class="fade-up">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:32px;" class="fade-up merv-grid">
       <!-- MERV-8 -->
       <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:24px;position:relative;overflow:hidden;">
         <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#888;"></div>
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Standard</div>
-        <div style="font-family:'Fraunces',serif;font-size:36px;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px;">MERV-8</div>
+        <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px;">MERV-8</div>
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:16px;">Most commercial buildings</div>
         <div style="font-size:12px;color:var(--text-bright);margin-bottom:4px;">Captures down to <strong style="color:white;">3 microns</strong></div>
         <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-bottom:16px;">
@@ -658,7 +857,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
       <div style="background:var(--bg3);border:1px solid rgba(245,158,11,0.3);border-radius:10px;padding:24px;position:relative;overflow:hidden;">
         <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--amber);"></div>
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:8px;">Upgraded — But Costly</div>
-        <div style="font-family:'Fraunces',serif;font-size:36px;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px;">MERV-13</div>
+        <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px;">MERV-13</div>
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:16px;">Standard pleated filter</div>
         <div style="font-size:12px;color:var(--text-bright);margin-bottom:4px;">Captures down to <strong style="color:white;">0.3 microns</strong></div>
         <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-bottom:16px;">
@@ -677,7 +876,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
       <div style="background:linear-gradient(180deg,rgba(77,217,172,0.08) 0%,var(--bg3) 100%);border:1px solid rgba(77,217,172,0.3);border-radius:10px;padding:24px;position:relative;overflow:hidden;">
         <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sky),var(--mint));"></div>
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mint);margin-bottom:8px;">The Breakthrough</div>
-        <div style="font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:white;line-height:1.1;margin-bottom:4px;">Blade Air<br>Pro Filter</div>
+        <div style="font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:white;line-height:1.1;margin-bottom:4px;">Blade Air Pro Filter</div>
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:16px;">Electromagnetic polarization</div>
         <div style="font-size:12px;color:var(--text-bright);margin-bottom:4px;">Captures down to <strong style="color:var(--mint);">0.007 microns ★</strong></div>
         <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-bottom:16px;">
@@ -710,7 +909,8 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
     <div class="section-eyebrow">Side by Side</div>
     <div class="section-title">Standard Filters vs.<br>Blade Air Pro Filter.</div>
     <div class="section-desc">Every line item below is measurable and verified. This isn't marketing — it's physics and performance data.</div>
-    <div class="compare-table fade-up">
+    <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;">
+    <div class="compare-table fade-up" style="min-width:520px;">
       <div class="compare-header">
         <div class="compare-header-cell">Performance Category</div>
         <div class="compare-header-cell">Standard Pleated Filter</div>
@@ -762,13 +962,14 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
         <div class="compare-cell good"><span class="check">✓</span> Zero ozone — CARB certified</div>
       </div>
     </div>
+    </div>
   </div>
 </section>
 
 <!-- GREEN IMPACT -->
-<section style="background:var(--bg2); padding:100px 5vw; border-top:1px solid var(--border);">
+<section style="background:var(--bg2); padding:clamp(40px,8vw,100px) 5vw; border-top:1px solid var(--border);" class="green-section">
   <div class="section-inner">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+    <div class="green-content-grid" style="max-width:860px;margin:0 auto;">
       <div class="fade-up">
         <div class="section-eyebrow">Environmental Impact</div>
         <div class="section-title">Better Filtration.<br>Smaller Footprint.</div>
@@ -778,6 +979,28 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
             <div style="font-size:22px; flex-shrink:0;">🌿</div>
             <div><div style="font-size:14px; font-weight:700; color:white; margin-bottom:3px;">240 kg CO₂e Avoided Per Filter, Per Year</div><div style="font-size:13px; color:var(--text); line-height:1.5;">Lower HVAC energy consumption directly reduces Scope 2 emissions. Fewer filter change-outs reduces Scope 3 emissions from manufacturing, transport, and landfill.</div></div>
           </div>
+          <div style="background:var(--bg3); border:1px solid rgba(77,217,172,0.15); border-radius:12px; padding:24px; text-align:center;">
+            <div style="font-size:12px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--mint); margin-bottom:24px;">Average Annual Pro Filter Impact — Per Building</div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:12px; margin-bottom:24px;" class="env-stats-grid">
+              <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+                <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">240 kg</div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">CO₂e avoided per filter</div>
+              </div>
+              <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+                <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">40.4t</div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Filtration waste removed</div>
+              </div>
+              <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+                <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">63%</div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Operational cost savings</div>
+              </div>
+              <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
+                <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">$13.7K</div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Average energy savings/yr</div>
+              </div>
+            </div>
+            <div style="font-size:12px; color:var(--text-muted); line-height:1.6; padding:14px; background:var(--surface); border-radius:6px; border:1px solid var(--border);">Scope 1, 2 &amp; 3 emissions reductions — measurable and reportable for ESG, LEED, and sustainability reporting requirements.</div>
+          </div>
           <div style="display:flex; gap:14px; align-items:flex-start; padding:16px 18px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
             <div style="font-size:22px; flex-shrink:0;">♻️</div>
             <div><div style="font-size:14px; font-weight:700; color:white; margin-bottom:3px;">70% Recycled Filter Media — Recyclable at End of Life</div><div class="font-size:13px; color:var(--text); line-height:1.5;">Standard disposable filters go straight to landfill every 1–3 months. Blade Air's longer-life media is made from recycled material and is recyclable — dramatically reducing filtration waste across your portfolio.</div></div>
@@ -786,30 +1009,6 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
             <div style="font-size:22px; flex-shrink:0;">📉</div>
             <div><div style="font-size:14px; font-weight:700; color:white; margin-bottom:3px;">40+ Tonnes of Waste Removed Per Building Annually</div><div style="font-size:13px; color:var(--text); line-height:1.5;">Blade Air's average building impact includes over 40 tonnes of filtration waste removed from the waste stream each year — a measurable, reportable sustainability outcome.</div></div>
           </div>
-        </div>
-      </div>
-      <div class="fade-up">
-        <div style="background:var(--bg3); border:1px solid rgba(77,217,172,0.15); border-radius:12px; padding:36px; text-align:center;">
-          <div style="font-size:12px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--mint); margin-bottom:24px;">Average Annual Pro Filter Impact — Per Building</div>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px;">
-            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
-              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">240 kg</div>
-              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">CO₂e avoided per filter</div>
-            </div>
-            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
-              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">40.4t</div>
-              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Filtration waste removed</div>
-            </div>
-            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
-              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">63%</div>
-              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Operational cost savings</div>
-            </div>
-            <div style="padding:24px 16px; background:rgba(77,217,172,0.06); border:1px solid rgba(77,217,172,0.12); border-radius:8px;">
-              <div style="font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:var(--mint); line-height:1;">$13.7K</div>
-              <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">Average energy savings/yr</div>
-            </div>
-          </div>
-          <div style="font-size:12px; color:var(--text-muted); line-height:1.6; padding:14px; background:var(--surface); border-radius:6px; border:1px solid var(--border);">Scope 1, 2 &amp; 3 emissions reductions — measurable and reportable for ESG, LEED, and sustainability reporting requirements.</div>
         </div>
       </div>
     </div>
@@ -860,7 +1059,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
 </section>
 
 <!-- ROI CALCULATOR (embedded) -->
-<section style="background:var(--bg2);padding:80px 0 0;" id="getstarted">
+<section style="background:var(--bg2);padding:clamp(40px,6vw,80px) 0 0;" id="getstarted">
   <div class="section-inner" style="text-align:center;margin-bottom:40px;">
     <div class="section-eyebrow">ROI Calculator</div>
     <div class="section-title" style="margin:0 auto 16px;">See Your Numbers<br>Before You Commit.</div>
