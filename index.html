@@ -411,6 +411,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
 .section-block-title{font-size:14px;font-weight:700;color:white;}
 .section-block-desc{font-size:11px;color:var(--text-muted);margin-top:1px;}
 .optional-tag{margin-left:auto;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);background:var(--surface);border:1px solid var(--border);padding:3px 8px;border-radius:3px;}
+.included-tag{margin-left:auto;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--mint);background:rgba(77,217,172,0.08);border:1px solid rgba(77,217,172,0.3);padding:3px 8px;border-radius:3px;}
 .input-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .input-grid.three{grid-template-columns:1fr 1fr 1fr;}
 .field{display:flex;flex-direction:column;gap:5px;}
@@ -676,7 +677,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
   /* Section blocks */
   .section-block-header { gap:8px; }
   .section-block-title { font-size:13px; }
-  .optional-tag { display:none; }
+  .included-tag { font-size:9px; padding:2px 6px; letter-spacing:0.5px; }
 
   /* Investment card in Quick View */
   [id="invCapexDisplay"], [id="invMaintDisplay"] { font-size:18px !important; }
@@ -1212,15 +1213,15 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
     <div class="section-block">
       <div class="section-block-header">
         <div class="section-block-icon icon-labor">👷</div>
-        <div><div class="section-block-title">Filter Change Labor</div><div class="section-block-desc">Present to owners/CFO — not facilities</div></div>
-        <div class="optional-tag">Optional</div>
+        <div><div class="section-block-title">Filter Change Labor</div><div class="section-block-desc">Defaults to in-house staff — set to Skip if not tracking</div></div>
+        <div class="included-tag">Included</div>
       </div>
       <div class="input-grid" style="margin-bottom:12px;">
         <div class="field">
           <label>Labor Type</label>
           <select class="sel" id="laborType" onchange="toggleLaborFields();calc()">
             <option value="none">Skip / Not tracking</option>
-            <option value="inhouse">In-house staff</option>
+            <option value="inhouse" selected>In-house staff</option>
             <option value="contractor">Outside contractor</option>
           </select>
         </div>
@@ -1246,14 +1247,14 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
     <div class="section-block">
       <div class="section-block-header">
         <div class="section-block-icon icon-energy">⚡</div>
-        <div><div class="section-block-title">HVAC Energy Usage</div><div class="section-block-desc">Biggest savings bucket — needs fan specs</div></div>
-        <div class="optional-tag">Optional</div>
+        <div><div class="section-block-title">HVAC Energy Usage</div><div class="section-block-desc">Biggest savings bucket — toggle off to exclude</div></div>
+        <div class="included-tag">Included</div>
       </div>
       <div class="toggle-row" onclick="toggleSection('energy')">
-        <div class="toggle" id="energyToggle"></div>
+        <div class="toggle on" id="energyToggle"></div>
         <div class="toggle-label">Include HVAC energy savings</div>
       </div>
-      <div class="collapsible" id="energyFields" style="max-height:0;">
+      <div class="collapsible" id="energyFields" style="max-height:400px;">
         <div class="input-grid three" style="margin-bottom:12px;">
           <div class="field">
             <label>Fan HP Per AHU</label>
@@ -1299,14 +1300,14 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
     <div class="section-block">
       <div class="section-block-header">
         <div class="section-block-icon icon-storage">📦</div>
-        <div><div class="section-block-title">Storage &amp; Logistics</div><div class="section-block-desc">Space and delivery costs for filter inventory</div></div>
-        <div class="optional-tag">Optional</div>
+        <div><div class="section-block-title">Storage &amp; Logistics</div><div class="section-block-desc">Space + delivery savings — toggle off to exclude</div></div>
+        <div class="included-tag">Included</div>
       </div>
       <div class="toggle-row" onclick="toggleSection('storage')">
-        <div class="toggle" id="storageToggle"></div>
+        <div class="toggle on" id="storageToggle"></div>
         <div class="toggle-label">Include storage &amp; logistics savings</div>
       </div>
-      <div class="collapsible" id="storageFields" style="max-height:0;">
+      <div class="collapsible" id="storageFields" style="max-height:300px;">
         <div class="input-grid" style="margin-bottom:12px;">
           <div class="field">
             <label>Storage Space Used (sq ft)</label>
@@ -1596,7 +1597,7 @@ const ms=document.createElement('style');ms.textContent='.nav-links.show{display
 
 
 /* ── EMBEDDED ROI CALCULATOR JS ── */
-let energyOn=false, storageOn=false, currentView='quick';
+let energyOn=true, storageOn=true, currentView='quick';
 
 function togglePerspective(){
   const b=document.getElementById('perspBody');
@@ -1886,6 +1887,7 @@ function sendReport(view) {
 }
 
 // Init
+toggleLaborFields();
 calc();
 
 </script>
